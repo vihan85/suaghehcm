@@ -1,0 +1,14 @@
+.test1 {
+    background-color: red;
+
+    .test2 {
+        background-color: yellow;
+    }
+    .test3 {
+        background-color: black;;
+    }
+}
+
+
+
+@import 'components/_header.scss';
