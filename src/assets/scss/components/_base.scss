@@ -1,15 +1,11 @@
-$primari-color: #0052cc;
-$text-color: #9b9b9b;
-$border-radius: 2px;
-$boder-color: #ebebeb;
-$font-weight: 400;
+
 
 html{
     font-size: 62.5%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Roboto', Times, serif, sans-serif;
 };
 
 .grỉd{
@@ -18,7 +14,7 @@ html{
     padding: 0;
 };
 
-.grid.wide{
+.grid.wide {
     width: 1200px;
     margin: 0 auto;
 };
@@ -47,6 +43,14 @@ html{
         padding-right: 8px;
     }
 };
+
+// tablet and low resolution
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    };
+    
+}
 
 //Pc and low solution
 @media (min-width: 1024px) and (max-width: 1239) {
