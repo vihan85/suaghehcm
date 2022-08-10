@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/./src/dist/css/index.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -40,7 +42,14 @@
                     </li>
                     
                     <li class="header-top-left_login">
-                        <a href="" class="header-top-left_items-link"> Login/ Sign Up </a>
+                        <a href="" class="header-top-left_items-link"> Liên hệ với chúng tôi </a>
+                        <a href="" class="header-top-left_items-link"> 
+                            <i class="fa-brands fa-square-facebook header-top-left_items-icon"></i>
+                         </a>
+                         <a href="" class="header-top-left_items-link"> 
+                            <i class="fa-solid fa-envelope header-top-left_items-icon"></i>
+                         </a>
+                        
                         <form action="" class="form-group">
                             <label for="" class="form-group-label">User Name</label>
                             <input type="text" class="id">
@@ -57,29 +66,38 @@
         </div>
 
         <header id="masthead" class="site-header wide grid ">
-            <div class="header wide grid">
-                <h1 class="site-title">
+            <div class="header-top-right">
+                
+                    <img src="/./src/assets/img/SofaLogo2 (1).png" alt="" class="header_img">
+                
+                <h2 class="site-title">
                     <a href="http://suaghehcm.local/" rel="home">Sang Sofa</a>
-                </h1>
-                <p class="site-description">Sửa ghế sofa tại HCM</p>
-            </div><!-- .site-branding -->
-
+                </h2>
+            </div>
+            <!-- .site-branding -->
             <nav id="site-navigation" class="main-navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
-                <div class="menu-header-menu-container">
+                <div class="menu-header-container">
                     <ul id="primary-menu" class="menu nav-menu">
                         <li class="menu-item">
                             <a href="https://suaghehcm.com/">Trang chủ</a>
                         </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-597"><a
-                                href="http://suaghehcm.local/boc-ghe-sofa-tai-nha/">Bọc ghế Sofa tại nhà</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-597">
+                            <a
+                                href="http://suaghehcm.local/boc-ghe-sofa-tai-nha/">Bọc ghế Sofa tại nhà
+                            </a>
+                            <i class="fa-solid fa-angle-down"></i>
+                            </li>
                         <li id="menu-item-687"
-                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-687"><a
-                                href="http://suaghehcm.local/boc-lai-ghe-sofa-tai-nha-bao-nhieu-tien/">Bọc ghế da</a>
+                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-687">
+                            <a
+                                href="http://suaghehcm.local/boc-lai-ghe-sofa-tai-nha-bao-nhieu-tien/">Bọc ghế da
+                            </a>
+                            <i class="fa-solid fa-angle-down"></i>
                         </li>
-                        <li id="menu-item-678"
+                        <li id="menu-item"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-678">
                             <a href="http://suaghehcm.local/category/boc-lai-ghe-sofa/">Ghế Sofa</a>
+                            <i class="fa-solid fa-angle-down"></i>
                             <ul class="sub-menu">
                                 <li id="menu-item-596"
                                     class="menu-item menu-item-type-post_type menu-item-object-post menu-item-596"><a
@@ -104,6 +122,10 @@
                             class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1087"><a
                                 href="http://suaghehcm.local/sua-ghe-van-phong-hcm/">Sửa ghế văn phòng Số lượng lớn</a>
                         </li>
+
+                        <div class="header-search">
+                            <i class="fa-solid fa-magnifying-glass header-search_icon"></i>
+                        </div>
                     </ul>
                 </div>
             </nav><!-- #site-navigation -->
@@ -143,34 +165,34 @@
                                 và quan trọng là tiết kiệm nhiều hơn so với việc mua mới hoàn toàn. </span></p>
                     </blockquote>
                     <h2>1. Bọc sofa tại nhà bao nhiêu tiền?</h2>
-                    <p><span style="font-weight: 400;">Giá của một bộ ghế sofa gia đình thấp nhất cũng khoảng 8 – 12
+                    <p><span >Giá của một bộ ghế sofa gia đình thấp nhất cũng khoảng 8 – 12
                             triệu. Với tuổi thọ từ 10 – 15 năm. Tuy nhiên, khoảng 2 -3 năm sử dụng. Chiếc ghế sẽ không
                             tránh khỏi những hư hại bên ngoài: bong tróc da, rách vải, tụt/lún phần đệm,… Lúc này,
-                        </span><b>bọc ghế sofa </b><span style="font-weight: 400;">là giải pháp tốt nhất, tiết kiệm nhất
+                        </span><b>bọc ghế sofa </b><span >là giải pháp tốt nhất, tiết kiệm nhất
                             để khôi phục tình trạng ban đầu của ghế.</span></p>
                     <ul>
                         <li>
-                            <h3><span style="font-weight: 400;">Dịch vụ </span><b>bọc sofa</b></h3>
+                            <h3><span >Dịch vụ </span><b>bọc sofa</b></h3>
                         </li>
                     </ul>
-                    <p><span style="font-weight: 400;">Dịch vụ </span><b>bọc sofa</b><span style="font-weight: 400;"> đã
+                    <p><span >Dịch vụ </span><b>bọc sofa</b><span > đã
                             không còn xa lạ với mọi người ở Tp.HCM nữa. Với mong muốn tạo sự thuận tiện nhất, Sang sofa
-                            cung cấp thêm dịch vụ </span><b>bọc sofa tận nhà</b><span style="font-weight: 400;">, giúp
+                            cung cấp thêm dịch vụ </span><b>bọc sofa tận nhà</b><span >, giúp
                             gia chủ dễ dàng sắp xếp thời gian, đồng thời tiết kiệm chi phí và giảm thiểu những rủi ro
                             trong quá trình vận chuyển ghế.</span></p>
                     <ul>
                         <li>
-                            <h3><i><span style="font-weight: 400;">Giá </span></i><b><i>bọc sofa tận nhà</i></b><i><span
-                                        style="font-weight: 400;"> bao nhiêu</span></i><span
-                                    style="font-weight: 400;">?</span></h3>
+                            <h3><i><span >Giá </span></i><b><i>bọc sofa tận nhà</i></b><i><span
+                                        > bao nhiêu</span></i><span
+                                    >?</span></h3>
                         </li>
                     </ul>
-                    <p><i><span style="font-weight: 400;">“Giá </span></i><b><i>bọc sofa tận nhà</i></b><i><span
-                                style="font-weight: 400;"> bao nhiêu</span></i><span style="font-weight: 400;">?” là câu
+                    <p><i><span >“Giá </span></i><b><i>bọc sofa tận nhà</i></b><i><span
+                                > bao nhiêu</span></i><span >?” là câu
                             hỏi của nhiều người khi lần đầu tiên biết đến dịch vụ. Hiện nay có nhiều mức giá khác nhau
                             trên thị trường. Taị Sang sofa, chúng tôi cam kết mang đến mức giá hợp lí nhất. Dựa trên
                             chất lượng dịch vụ gia chủ nhận được. Bằng chứng là có rất nhiều khách hàng sau khi đã
-                        </span><b>bọc ghế sofa</b><span style="font-weight: 400;"> tại Sang sofa đã giới thiệu cho nhiều
+                        </span><b>bọc ghế sofa</b><span > tại Sang sofa đã giới thiệu cho nhiều
                             người thân và bạn bè của mình.</span></p>
                     <figure id="attachment_733" aria-describedby="caption-attachment-733" style="width: 900px"
                         class="wp-caption aligncenter"><img loading="lazy" class="size-full wp-image-733"
@@ -182,33 +204,33 @@
                         <figcaption id="caption-attachment-733" class="wp-caption-text">Sang sofa cung cấp dịch vụ bọc
                             sofa tận nhà mang lại nhiều tiện ích vượt trội.</figcaption>
                     </figure>
-                    <p><span style="font-weight: 400;">Tùy từng tình trạng hư hỏng, kích thước và việc lựa chọn chất
+                    <p><span >Tùy từng tình trạng hư hỏng, kích thước và việc lựa chọn chất
                             liệu bọc lại ghế, sẽ có mức giá khác nhau cho dịch vụ </span><b>bọc sofa tận nhà</b><span
-                            style="font-weight: 400;">. Việc đầu tiên anh chị cần làm là xác định những hư hỏng của ghế,
+                            >. Việc đầu tiên anh chị cần làm là xác định những hư hỏng của ghế,
                             sau đó gọi hoặc gửi tin nhắn kèm hình ảnh (nếu có) đến số </span><span
-                            style="font-weight: 400;">096.795.7072 (sms, zalo) để được báo giá chỉ trong vòng 10
+                            >096.795.7072 (sms, zalo) để được báo giá chỉ trong vòng 10
                             phút.</span></p>
                     <h2>2. Tại sao nên lựa chọn dịch vụ bọc sofa tại nhà từ Sang sofa</h2>
-                    <p><span style="font-weight: 400;">Dịch vụ bọc ghế sofa từ Sang sofa có những ưu điểm vượt bậc.
+                    <p><span >Dịch vụ bọc ghế sofa từ Sang sofa có những ưu điểm vượt bậc.
                             Anh/chị có thể cân nhắc để lựa chọn:</span></p>
                     <ul>
-                        <li style="font-weight: 400;"><span style="font-weight: 400;">Dịch vụ tận nhà, giá rẻ:
-                            </span><b>bọc sofa</b><span style="font-weight: 400;"> tận nhà tất cả các ngày trong tuần
+                        <li ><span >Dịch vụ tận nhà, giá rẻ:
+                            </span><b>bọc sofa</b><span > tận nhà tất cả các ngày trong tuần
                                 (kể cả T7 và CN) giúp anh/chị dễ dàng sắp xếp thời gian làm việc và sinh hoạt của gia
                                 đình. Mức giá rẻ cũng là lí do Sang sofa được nhiều khách hàng lựa chọn.</span></li>
-                        <li style="font-weight: 400;"><span style="font-weight: 400;">Đảm bảo chất lượng và có bảo hành:
+                        <li ><span >Đảm bảo chất lượng và có bảo hành:
                                 chúng tôi sử dụng những kĩ thuật bọc ghế linh hoạt theo từng hình dáng ghế và kĩ thuật
-                            </span><b>bọc sofa</b><span style="font-weight: 400;"> cũ, nên đảm bảo chất lượng sau khi
-                                thi công. Trong vòng </span><span style="font-weight: 400;">6 tháng</span><span
-                                style="font-weight: 400;">, mọi hư hỏng liên quan đến lỗi kĩ thuật mà không do tác động
+                            </span><b>bọc sofa</b><span > cũ, nên đảm bảo chất lượng sau khi
+                                thi công. Trong vòng </span><span >6 tháng</span><span
+                                >, mọi hư hỏng liên quan đến lỗi kĩ thuật mà không do tác động
                                 bên ngoài sẽ được Sang sofa bảo hành miễn phí.</span></li>
-                        <li style="font-weight: 400;"><span style="font-weight: 400;"><span
-                                    style="font-weight: 400;">Làm việc nhanh chóng và đúng tiến độ: báo giá trong vòng
+                        <li ><span ><span
+                                    >Làm việc nhanh chóng và đúng tiến độ: báo giá trong vòng
                                     10 phút. Quy trình bọc ghế nhanh chóng, đúng tiến độ với thời gian dự kiến cam kết
                                     với chủ nhà.<br>
                                 </span></span>
                             <p></p>
-                            <figure id="attachment_734" aria-describedby="caption-attachment-734" style="width: 900px"
+                            <figure id="attachment_734" aria-describedby="caption-attachment-734"
                                 class="wp-caption aligncenter"><img loading="lazy" class="size-full wp-image-734"
                                     src="./homepage_files/boc-ghe-sofa-tai-nha-2.png"
                                     alt="Hình ảnh thật của ghế sau khi bọc lại" width="900" height="508"
@@ -217,43 +239,43 @@
                                 <figcaption id="caption-attachment-734" class="wp-caption-text">Hình ảnh thật của ghế
                                     sau khi bọc lại,.</figcaption>
                             </figure>
-                            <p><span style="font-weight: 400;">Quy trình dịch vụ </span><b>bọc sofa tại nhà</b><span
-                                    style="font-weight: 400;"> từ Sang sofa</span></p>
+                            <p><span >Quy trình dịch vụ </span><b>bọc sofa tại nhà</b><span
+                                    > từ Sang sofa</span></p>
                             <ul>
-                                <li style="font-weight: 400;">
-                                    <h3><span style="font-weight: 400;">Bước 1: Báo giá</span></h3>
+                                <li >
+                                    <h3><span >Bước 1: Báo giá</span></h3>
                                 </li>
                             </ul>
-                            <p><span style="font-weight: 400;">Anh/chị liên hệ đến hotline </span><span
-                                    style="font-weight: 400;">096.795.7072 (Gặp Sang) và mô tả sơ bộ tình trạng sơ bộ
+                            <p><span >Anh/chị liên hệ đến hotline </span><span
+                                    >096.795.7072 (Gặp Sang) và mô tả sơ bộ tình trạng sơ bộ
                                     của ghế. Chúng tôi sẽ tư vấn cách sửa chữa phù hợp. Tiết kiệm nhất và báo giá
-                                </span><b>bọc sofa</b><span style="font-weight: 400;"> theo từng loại chất liệu mà
+                                </span><b>bọc sofa</b><span > theo từng loại chất liệu mà
                                     anh/chị yêu cầu.</span></p>
                             <ul>
-                                <li style="font-weight: 400;">
-                                    <h3><span style="font-weight: 400;">Bước 2: Thẩm định ghế</span></h3>
+                                <li >
+                                    <h3><span >Bước 2: Thẩm định ghế</span></h3>
                                 </li>
                             </ul>
-                            <p><span style="font-weight: 400;">Nhân viên Sang sofa sẽ đến nhà để kiểm tra một lần nữa
+                            <p><span >Nhân viên Sang sofa sẽ đến nhà để kiểm tra một lần nữa
                                     tất cả các hư hỏng. Xác định kĩ thuật </span><b>bọc sofa</b><span
-                                    style="font-weight: 400;"> cũ để có phương án bọc lại ghế phù hợp nhất; tư vấn
+                                    > cũ để có phương án bọc lại ghế phù hợp nhất; tư vấn
                                     anh/chị cách lựa chọn chất liệu đẹp, bền; tư vấn cách chọn màu sắc sao cho “ăn ý”
                                     với tổng thể căn phòng. Đồng thời, báo giá chính xác với những yêu cầu của
                                     anh/chị.</span></p>
                             <ul>
-                                <li style="font-weight: 400;">
-                                    <h3><span style="font-weight: 400;">Bước 3: Thi công và bàn giao</span></h3>
+                                <li >
+                                    <h3><span >Bước 3: Thi công và bàn giao</span></h3>
                                 </li>
                             </ul>
-                            <p><span style="font-weight: 400;">Sau khi đã thống nhất các phương án sửa chữa và chất
+                            <p><span >Sau khi đã thống nhất các phương án sửa chữa và chất
                                     liệu, đội ngũ thi công từ Sang sofa sẽ mang tất cả các dụng cụ và vật liệu cần thiết
                                     đến tận nhà để tiến hành </span><b>bọc sofa</b><span
-                                    style="font-weight: 400;">.</span></p>
-                            <p><span style="font-weight: 400;">Ngoài những ưu điểm như tiết kiệm chi phí, hạn chế rủi ro
-                                    trong lúc vận chuyển, </span><b>bọc sofa tại nhà</b><span style="font-weight: 400;">
+                                    >.</span></p>
+                            <p><span >Ngoài những ưu điểm như tiết kiệm chi phí, hạn chế rủi ro
+                                    trong lúc vận chuyển, </span><b>bọc sofa tại nhà</b><span >
                                     còn giúp anh/chị có thể quan sát cả quá trình thực hiện và góp ý hoặc có các yêu cầu
                                     thay đổi kịp thời (nếu có).</span></p>
-                            <p><span style="font-weight: 400;">Sang sofa hoàn thành sản phẩm và bàn giao theo đúng thời
+                            <p><span >Sang sofa hoàn thành sản phẩm và bàn giao theo đúng thời
                                     gian dự kiến đã nói ban đầu. Trường hợp có những phát sinh thêm trong lúc thi công
                                     theo yêu cầu mới của anh/chị. Thời gian hoàn thành dự kiến cũng sẽ được. Sang sofa
                                     thông báo để cả nhà có thể sắp xếp thời gian sinh hoạt của gia đình mình.</span></p>
@@ -269,11 +291,11 @@
                         <figcaption id="caption-attachment-735" class="wp-caption-text">Sang sofa – dịch vụ bọc sofa tận
                             nơi được nhiều khách hàng yêu thích.</figcaption>
                     </figure>
-                    <p><span style="font-weight: 400;">Hãy liên hệ ngay để được chúng tôi báo giá chỉ trong vòng 10
+                    <p><span >Hãy liên hệ ngay để được chúng tôi báo giá chỉ trong vòng 10
                             phút!</span></p>
-                    <p><span style="font-weight: 400;">Hotline:</span> 096.795.7072<span style="font-weight: 400;"> (Gặp
+                    <p><span >Hotline:</span> 096.795.7072<span > (Gặp
                             Sang)</span></p>
-                    <p><span style="font-weight: 400;">Địa chỉ: </span><span style="font-weight: 400;">Đinh Tiên Hoàng,
+                    <p><span >Địa chỉ: </span><span >Đinh Tiên Hoàng,
                             P.1, Quận Bình Thạnh, TP.HCM.</span></p>
                 </div><!-- .entry-content -->
 
@@ -488,26 +510,26 @@
 
                 <div class="entry-content">
                     <blockquote>
-                        <p><b>Bọc ghế sofa</b><span style="font-weight: 400;"> tận nơi giúp tiết kiệm thời gian, giảm
+                        <p><b>Bọc ghế sofa</b><span > tận nơi giúp tiết kiệm thời gian, giảm
                                 chi phí so với việc mua mới ghế. Bên cạnh đó, dịch vụ giúp mọi người chủ động sắp xếp
                                 thời gian để phù hợp với lịch làm việc,học tập cá nhân.</span></p>
-                        <p><span style="font-weight: 400;">Hiện tại, Sang Sofa cung cấp dịch vụ sửa ghế tận nhà. Sửa ghế
+                        <p><span >Hiện tại, Sang Sofa cung cấp dịch vụ sửa ghế tận nhà. Sửa ghế
                                 tại văn phòng, ở phòng karaoke và sản xuất ghế theo yêu cầu riêng.</span></p>
                     </blockquote>
                     <h2>1.Bọc ghế sofa tại nhà</h2>
-                    <p><span style="font-weight: 400;">Sang sofa cung cấp dịch vụ </span><b>bọc ghế sofa</b><span
-                            style="font-weight: 400;"> tại nhà. Khắc phục được mọi tình trạng hư hỏng của ghế như: rách
+                    <p><span >Sang sofa cung cấp dịch vụ </span><b>bọc ghế sofa</b><span
+                            > tại nhà. Khắc phục được mọi tình trạng hư hỏng của ghế như: rách
                             phần da (simily, vải), tụt/ lún phần nệm,… Trên nhiều kiểu dáng ghế khác nhau: ghế đơn, ghế
                             đôi, ghế chữ L, chữ U,…</span></p>
-                    <p><span style="font-weight: 400;">Dịch vụ thực hiện tận nơi ngay tại nhà giúp tiết kiệm chi phí và
+                    <p><span >Dịch vụ thực hiện tận nơi ngay tại nhà giúp tiết kiệm chi phí và
                             hạn chế những rủi ro trong quá trình vận chuyển từ nhà đến xưởng. Bên cạnh đó, anh/chị còn
                             có thể quan sát thi công và đề nghị chỉnh sửa theo ý muốn.</span></p>
-                    <p><b>Bọc ghế sofa tại nhà</b><span style="font-weight: 400;"> từ Sang sofa cam kết giá tốt so với
+                    <p><b>Bọc ghế sofa tại nhà</b><span > từ Sang sofa cam kết giá tốt so với
                             thị trường, tùy theo từng tình trạng hư hỏng của ghế mà sẽ có chi phí sửa chữa khác nhau.
                         </span></p>
-                    <p><span style="font-weight: 400;">Để nhận được báo giá chính xác nhất, anh chị hãy gọi trực tiếp
+                    <p><span >Để nhận được báo giá chính xác nhất, anh chị hãy gọi trực tiếp
                             hoặc gửi tin nhắn kèm hình ảnh của ghế đến hotline &nbsp;</span><span
-                            style="font-weight: 400;">096.795.7072 (zalo, sms).</span></p>
+                            >096.795.7072 (zalo, sms).</span></p>
                     <figure id="attachment_699" aria-describedby="caption-attachment-699" style="width: 900px"
                         class="wp-caption aligncenter"><img loading="lazy" class="size-full wp-image-699"
                             src="./homepage_files/Watermark636650367702623661.png"
@@ -532,28 +554,28 @@
                             cách tiết kiệm chi phí nhất cho chủ quán thay vì mua mới.</figcaption>
                     </figure>
                     <p>&nbsp;</p>
-                    <p><span style="font-weight: 400;">Chúng tôi có rất nhiều chất liệu khác nhau như da thật, giả da,
+                    <p><span >Chúng tôi có rất nhiều chất liệu khác nhau như da thật, giả da,
                             vải bố, vải họa tiết,… Phù hợp mọi yêu cầu của anh/chị. Bên cạnh đó, nếu số lượng ghế cần
                             sửa chữa càng nhiều thì giá cả càng thấp. Giải quyết đáng kể “bài toán chi phí” cho chủ
                             quán. </span></p>
                     <h3>3.Bọc ghế văn phòng</h3>
-                    <p><span style="font-weight: 400;">Tuổi thọ trung bình của một chiếc ghế văn phòng từ 5 – 6 năm.
+                    <p><span >Tuổi thọ trung bình của một chiếc ghế văn phòng từ 5 – 6 năm.
                             Nhưng trong quá trình sử dụng sẽ không tránh khỏi những hư hại bên ngoài như tróc phần da,
                             hư ben ghế, gãy bánh xe,… Các chủ doanh nghiệp thường sẽ chọn cách mua mới cho nhân viên của
                             mình.</span></p>
-                    <p><span style="font-weight: 400;">Tuy nhiên, những hư hại này có thể dễ dàng khắc phục bằng cách
-                        </span><b>bọc lại ghế</b><span style="font-weight: 400;"> hoặc thay mới một số phụ kiện để tiết
+                    <p><span >Tuy nhiên, những hư hại này có thể dễ dàng khắc phục bằng cách
+                        </span><b>bọc lại ghế</b><span > hoặc thay mới một số phụ kiện để tiết
                             kiệm chi phí đáng kể cho công ty.</span></p>
-                    <p><span style="font-weight: 400;">Hiện tại <a href="https://suaghehcm.com/">Sang Sofa</a> làm việc
+                    <p><span >Hiện tại <a href="https://suaghehcm.com/">Sang Sofa</a> làm việc
                             7 ngày trong tuần (kể cả T7 và CN). Để không cản trở tiến độ làm việc của toàn thể nhân
                             viên. Anh/ chị chỉ cần nhấc máy lên và gọi đến số </span><span
-                            style="font-weight: 400;">096.795.7072 (Gặp Sang). Sẽ có nhân viên đến tận văn phòng thẩm
+                            >096.795.7072 (Gặp Sang). Sẽ có nhân viên đến tận văn phòng thẩm
                             định ghế và báo giá sửa chữa.</span></p>
                     <h3>4.Sản xuất ghế mới theo yêu cầu</h3>
-                    <p><span style="font-weight: 400;">Bên cạnh dịch vụ </span><b>bọc ghế sofa</b><span
-                            style="font-weight: 400;"> tận nơi. <a href="https://suaghehcm.com/">Sang sofa</a> còn sản
+                    <p><span >Bên cạnh dịch vụ </span><b>bọc ghế sofa</b><span
+                            > tận nơi. <a href="https://suaghehcm.com/">Sang sofa</a> còn sản
                             xuất ghế mới theo yêu cầu riêng.</span></p>
-                    <p><span style="font-weight: 400;">Thông thường, các loại ghế như sofa, ghế văn phòng, … Sẽ có các
+                    <p><span >Thông thường, các loại ghế như sofa, ghế văn phòng, … Sẽ có các
                             kích thước và hình dáng chuẩn. Nếu anh/chị đang có một ngôi nhà hoặc văn phòng được thiết kế
                             riêng. Và không một loại bàn ghế nào được bán sẵn trên thị trường có thể phù hợp, anh/chị
                             hãy liên hệ ngay <a href="https://suaghehcm.com/">Sang Sofa</a>. Phòng tư vấn sẽ lắng nghe
@@ -571,49 +593,49 @@
                     </figure>
                     <h3>5.Cách thức liên hệ và sử dụng dịch vụ bọc ghế sofa tận nơi từ <a
                             href="https://suaghehcm.com/">Sang Sofa</a></h3>
-                    <p><span style="font-weight: 400;">Dưới đây là toàn bộ quy trình thực hiện dịch vụ tại <a
+                    <p><span >Dưới đây là toàn bộ quy trình thực hiện dịch vụ tại <a
                                 href="https://suaghehcm.com/">Sang sofa</a>:Hotline: 096.795.7072 &nbsp;(Gặp
                             Sang).</span></p>
                     <ul>
-                        <li style="font-weight: 400;"><b>Yêu cầu báo giá:</b><span style="font-weight: 400;"> anh/chị
-                                hãy gọi đến số </span><span style="font-weight: 400;">096.795.7072 (Gặp Sang) để mô tả
+                        <li ><b>Yêu cầu báo giá:</b><span > anh/chị
+                                hãy gọi đến số </span><span >096.795.7072 (Gặp Sang) để mô tả
                                 tình trạng hư hỏng của ghế. Hoặc gửi tin nhắn kèm hình ảnh ghế đến Zalo của số trên để
                                 được báo giá chính xác.</span></li>
-                        <li style="font-weight: 400;"><b>Thẩm định ghế:</b><span style="font-weight: 400;"> nhân viên
+                        <li ><b>Thẩm định ghế:</b><span > nhân viên
                                 Sang Sofa đến tận nơi (tại nhà, văn phòng, quán karaoke). Để xem tình trạng thực của ghế
                                 và nhận yêu cầu sửa chữa từ khách hàng.</span></li>
-                        <li style="font-weight: 400;"><b>Tiến hành thi công:</b><span style="font-weight: 400;"> đội ngũ
+                        <li ><b>Tiến hành thi công:</b><span > đội ngũ
                                 thi công mang dụng cụ, vật liệu đến tận nơi để </span><b>bọc ghế sofa</b><span
-                                style="font-weight: 400;"> hoặc tiến hành những sửa chữa theo đúng yêu cầu.</span></li>
-                        <li style="font-weight: 400;"><b>Thành phẩm:</b><span style="font-weight: 400;"> sau khi đã thực
+                                > hoặc tiến hành những sửa chữa theo đúng yêu cầu.</span></li>
+                        <li ><b>Thành phẩm:</b><span > sau khi đã thực
                                 hiện xong, khách hàng kiểm tra và nhận ghế.</span></li>
                     </ul>
-                    <h4><span style="font-weight: 400;">Tại sao anh chị nên sử dụng dịch vụ </span><b>bọc ghế
-                            sofa</b><span style="font-weight: 400;">/ sửa chữa ghế tận nơi từ Sang sofa?</span></h4>
+                    <h4><span >Tại sao anh chị nên sử dụng dịch vụ </span><b>bọc ghế
+                            sofa</b><span >/ sửa chữa ghế tận nơi từ Sang sofa?</span></h4>
                     <ul>
-                        <li style="font-weight: 400;"><span style="font-weight: 400;">Giá cả hợp lí: các khách hàng đã
+                        <li ><span >Giá cả hợp lí: các khách hàng đã
                                 sử dụng một trong các dịch vụ từ. Sang sofa đều cảm thấy hài lòng với chất lượng nhận
                                 được. So với giá tiền bỏ ra và giới thiệu cho nhiều người cùng sử dụng dịch vụ.</span>
                         </li>
-                        <li style="font-weight: 400;"><span style="font-weight: 400;">Thuận tiện và tiết kiệm thời gian:
+                        <li ><span >Thuận tiện và tiết kiệm thời gian:
                                 Sang sofa làm việc tất cả các ngày trong tuần (kể cả T7&amp; và CN). Nên các anh/chị dễ
                                 sắp xếp thời gian sửa ghế vào cuối tuần. Để không làm ảnh hưởng đến công việc của mình.
                             </span></li>
-                        <li style="font-weight: 400;"><span style="font-weight: 400;">Làm việc nhanh chóng, đúng thời
+                        <li ><span >Làm việc nhanh chóng, đúng thời
                                 hạn.&nbsp; Anh/ chị chỉ cần gọi hoặc gửi tin nhắn mô tả về tình trạng hư của ghế. Sẽ
                                 nhận được báo giá gần đúng nhất. Để có thể quyết định ngay việc sử dụng dịch vụ hay
                                 không. Đội thi công làm việc nhanh chóng, hoàn thành công việc đúng giờ đã định
                                 trước.</span></li>
-                        <li style="font-weight: 400;"><span style="font-weight: 400;">Có bảo hành: khách hàng sử dụng
-                                dịch vụ </span><b>bọc ghế sofa</b><span style="font-weight: 400;"> vẫn được đảm bảo
-                                chính sách bảo hành tốt nhất. Trong vòng </span><span style="font-weight: 400;">6
-                                tháng</span><span style="font-weight: 400;">, những hư hại trên bề mặt da hoặc các lỗi
+                        <li ><span >Có bảo hành: khách hàng sử dụng
+                                dịch vụ </span><b>bọc ghế sofa</b><span > vẫn được đảm bảo
+                                chính sách bảo hành tốt nhất. Trong vòng </span><span >6
+                                tháng</span><span >, những hư hại trên bề mặt da hoặc các lỗi
                                 do thi công như bung tróc, lún,… Không do tác động ngoại lực từ bên ngoài, sẽ được Sang
                                 sofa khắc phục hoàn toàn miễn phí.</span></li>
                     </ul>
-                    <p><span style="font-weight: 400;">Hãy liên hệ ngay chúng tôi để được hỗ trợ</span></p>
+                    <p><span >Hãy liên hệ ngay chúng tôi để được hỗ trợ</span></p>
                     <p>Hotline: 096.795.7072 &nbsp;(Gặp Sang)</p>
-                    <p><span style="font-weight: 400;">Địa chỉ: </span><span style="font-weight: 400;">Đinh Tiên Hoàng,
+                    <p><span >Địa chỉ: </span><span >Đinh Tiên Hoàng,
                             P.1, Quận Bình Thạnh</span></p>
                 </div><!-- .entry-content -->
 
