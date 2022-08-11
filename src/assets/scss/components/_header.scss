@@ -87,9 +87,8 @@
     display: none;
 }
 
-
-
 .site-header {
+    
     display: flex;
     height: 70px;
     align-items: center;
@@ -121,12 +120,13 @@
                 display: flex;
                 justify-content: space-evenly;
                 list-style-type: none;
-
-                a {
-                    text-decoration: none;
-                    color: black;
-                    font-size: 1.1em;
-                    font-weight: 400;
+                .menu-item {
+                   >a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.1em;
+                        font-weight: 400;
+                    }
                 }
 
                 .menu-item {
@@ -152,9 +152,67 @@
 
 }
 
+.sub-menu {
+    padding: 12px 0 0 0;
+    overflow: hidden;
+    
+    
+    .sub-menu-item {
+        padding: 8px 12px;
+        animation-name: subMenu;
+        animation-duration: 2s;
+        animation-timing-function: ease;
 
+        >a {
+            color: $text-color;
+            text-decoration: none;
+            animation-name: subMenu;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+        }
+    }
 
+    .sub-menu-item:hover {
+        animation-name: subMenuHover;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+       
+        @include backgroundText1($primari-color);
+        
 
+        > a {
+            animation-name: subMenuHover;
+            animation-duration: 0.5s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+
+        }
+    }
+}
+
+@keyframes subMenu {
+    from {
+        opacity: 1;
+        color: $white-color;
+
+    }
+    to {
+        opacity: 0.3;
+        color: $text-color;
+    }
+}
+
+@keyframes subMenuHover {
+    from {
+        opacity: 0.3;
+        color: $text-color;
+    }
+    to {
+        opacity: 1;
+        color: $white-color;
+
+    }
+}
 
 
 
@@ -163,3 +221,7 @@
         background-color: blue;
     }
 }
+
+
+
+    

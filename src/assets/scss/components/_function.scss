@@ -1,0 +1,8 @@
+@mixin backgroundText1 ($backgroundcolor) {
+    background-color: $backgroundcolor;
+
+    @if ($backgroundcolor == $primari-color) {
+        color: $white-color;
+        @content;
+    }
+}
