@@ -5,4 +5,8 @@
         color: $white-color;
         @content;
     }
+
+    @if ($backgroundcolor == $white-color) {
+        color: $text-color;
+    }
 }

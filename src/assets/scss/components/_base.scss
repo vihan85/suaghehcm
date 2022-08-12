@@ -1,10 +1,12 @@
-
+*{
+    box-sizing: border-box;
+}
 
 html{
     font-size: 62.5%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    // margin: 0;
+    // padding: 0;
+    
     font-family: 'Roboto', Times, serif, sans-serif;
 };
 
@@ -15,22 +17,31 @@ html{
 };
 
 .grid.wide {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 };
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -4px;
-    margin-right: -4px;
+    margin-left: -8px;
+    margin-right: -8px
 };
 
 .col {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-clip: content-box; // css cho khoảng nên của element
+    margin-top: 8px
 }
-
+.c-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 // tablet
 @media (min-width: 740) {
     .row {

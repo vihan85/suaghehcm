@@ -1,22 +1,25 @@
-.header-top{
-    
+.header-top {
+
     height: 36px;
     border-bottom: 1px solid $boder-color;
     display: flex;
     align-items: center;
     font-weight: 400;
-    
-    .header-top_tell{
+
+    .header-top_tell {
         color: $text-color;
         font-size: 1.6em;
         text-decoration: none;
         margin-left: 8px;
     }
-    a:hover{
-            opacity: 0.5;
-            color: rgb(89, 86, 86)
+
+    a:hover {
+        opacity: 0.5;
+        color: rgb(89, 86, 86)
     }
-};
+}
+
+;
 
 .header-top-left {
     margin-right: 8px;
@@ -25,7 +28,8 @@
     display: flex;
     color: $text-color;
     margin-left: auto;
-    > ul {
+
+    >ul {
         position: relative;
         display: flex;
         list-style-type: none;
@@ -34,20 +38,22 @@
         li {
             margin-left: 36px;
             cursor: pointer;
+
             a {
                 color: $text-color;
                 text-decoration: none;
             }
 
             &.header-top-left_language {
-               
+
 
                 @include responsive(phone) {
                     background-color: blue;
                 }
             }
+
             &.header-top-left_login {
-                .header-top-left_items-icon{
+                .header-top-left_items-icon {
                     margin: 0 4px;
                     font-size: 1.2em;
                 }
@@ -58,7 +64,7 @@
             }
         }
 
-        .header-top-left_language::after{
+        .header-top-left_language::after {
             position: absolute;
             content: "";
             width: 1px;
@@ -67,10 +73,11 @@
             top: 0;
             right: 60%;
             display: block;
+
         }
     }
 
-    .header-top-left_language{
+    .header-top-left_language {
         ul {
             display: none;
             flex-direction: column;
@@ -83,67 +90,93 @@
 
 
 
-.form-group{
+.form-group {
     display: none;
 }
 
 .site-header {
-    
+
     display: flex;
     height: 70px;
     align-items: center;
     border-bottom: 1px solid;
     font-size: 1.5em;
     color: $primari-color;
+
     .header-top-right {
         font-size: 1.5em;
         display: flex;
         align-items: center;
-        .header_img {
-            object-fit: contain;
-            height: 70px;
+
+        .header-top-right_logo {
+            margin-left: 74px;
+
+            .header_img {
+                object-fit: contain;
+                height: 70px;
+                cursor: pointer;
+            }
+
         }
-        .site-title{
-            a{
+
+        .site-title {
+            a {
                 text-decoration: none;
                 color: $primari-color;
-        
+
             }
         }
-       
+
     }
 
-    .main-navigation{
+    .main-navigation {
         flex: 1;
+
         .menu-header-container {
             .nav-menu {
                 display: flex;
                 justify-content: space-evenly;
                 list-style-type: none;
+
                 .menu-item {
-                   >a {
-                        text-decoration: none;
+                    padding: 16px;
+                    border-bottom: 3px solid transparent;
+
+                    >a {
+                        text-decoration: none transparent;
                         color: black;
                         font-size: 1.1em;
-                        font-weight: 400;
+                        font-weight: 600;
+                    }
+
+                }
+
+                .menu-item:hover {
+                    border-color: $primari-color;
+
+                    >a {
+                        animation: submenu 0.2s ease;
+                        animation-fill-mode: forwards;
+                        animation-delay: 0.1;
                     }
                 }
 
                 .menu-item {
                     position: relative;
-                    .sub-menu { 
-                        left: -75%;
+
+                    .sub-menu {
                         position: absolute;
-                        min-width: 200px;
-                        max-width: 250px;
+                        min-width: 220px;
+                        max-width: 276px;
                         background: white;
                         list-style-type: none;
                         padding: 12px;
-                        top: 32px;
+                        top: 50px;
+                        left: -50px;
                         border-radius: 13px;
                         box-shadow: 1px 1px 3px 0px #ccc;
                     }
-                    
+
                 }
             }
 
@@ -154,74 +187,108 @@
 
 .sub-menu {
     padding: 12px 0 0 0;
-    overflow: hidden;
-    
-    
+    // overflow: hidden;
+    display: none;
+
+    // position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 19px;
+        top: -8%;
+        display: block;
+        cursor: pointer;
+    }
+
     .sub-menu-item {
+        @include backgroundText1 ($white-color);
         padding: 8px 12px;
-        animation-name: subMenu;
-        animation-duration: 2s;
-        animation-timing-function: ease;
+        font-size: 1.1em;
 
         >a {
             color: $text-color;
             text-decoration: none;
-            animation-name: subMenu;
-            animation-duration: 2s;
-            animation-timing-function: ease;
         }
     }
 
     .sub-menu-item:hover {
-        animation-name: subMenuHover;
-        animation-duration: 2s;
-        animation-timing-function: ease;
-       
+        cursor: pointer;
         @include backgroundText1($primari-color);
-        
+        animation-name: subMenuHover;
+        animation-duration: 0.1s;
+        animation-timing-function: ease;
 
-        > a {
+
+        >a {
             animation-name: subMenuHover;
             animation-duration: 0.5s;
             animation-timing-function: ease;
+            animation-delay: 0.00001s;
             animation-fill-mode: forwards;
+
 
         }
     }
 }
 
-@keyframes subMenu {
-    from {
-        opacity: 1;
-        color: $white-color;
+#menu-item1 {}
 
-    }
-    to {
-        opacity: 0.3;
-        color: $text-color;
-    }
+#menu-item1:hover .sub-menu {
+    display: block;
+    animation-name: grow;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+
 }
+
 
 @keyframes subMenuHover {
     from {
-        opacity: 0.3;
+
+        opacity: 0.7;
         color: $text-color;
     }
+
     to {
+
         opacity: 1;
         color: $white-color;
 
     }
 }
 
+@keyframes submenu {
+    from {
 
+        color: black;
+    }
+
+    to {
+        color: $primari-color;
+    }
+}
+
+@keyframes grow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 @include responsive(phone) {
-    .site-title{
+    .site-title {
         background-color: blue;
     }
 }
 
 
 
-    
+.site-main_service-item {
+
+    height: 50px;
+    width: 50px;
+}
