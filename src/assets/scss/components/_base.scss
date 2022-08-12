@@ -1,11 +1,11 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html{
     font-size: 62.5%;
-    // margin: 0;
-    // padding: 0;
     
     font-family: 'Roboto', Times, serif, sans-serif;
 };
@@ -67,6 +67,12 @@ html{
 @media (min-width: 1024px) and (max-width: 1239) {
     .wide {
         width: 984px;
+    };
+};
+
+@media (min-width: 1240) and (max-width: 1490px) {
+    .wide {
+        width: 1200 px;
     };
 };
 

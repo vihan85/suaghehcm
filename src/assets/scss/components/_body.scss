@@ -1,7 +1,6 @@
 .site-main {
 
     .slider {
-        height: 100px;
         background-color: #ccc;
         padding: 8px;
         background-clip: content-box;
@@ -10,6 +9,13 @@
     .site-main_service{
         .site-main_service-item{
             background-color: beige;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 400;
+            background-color: $second-backgroundcolor;
+            >br {
+                padding-top: 5px;
+            }
         }
     }
 }
