@@ -88,10 +88,86 @@
     }
 }
 
+//header
+
+.site-header{
+    height: $headerHeight;
+    border-bottom: 1px solid $primari-color;
+    .site-header_container{
+        height: inherit;
+    }
+    .site-header-right{
+        height: inherit;
+        .site-header-right_logo{
+            
+
+            .site-header-right_logo-img{
+               
+
+
+            }
+        }
+    }
+
+    .main-navigation{
+        height: inherit;
+        .main-nav-icon{
+
+            display: none;
+        }
+
+        .menu-header-container{
+            height: inherit;
+            .nav-menu{
+                height: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                list-style-type: none;
+                .menu-item{
+                    position: relative;
+                    height: inherit;
+                    line-height: $headerHeight;
+
+                    >a{
+                        text-decoration: none;
+                        color: $black-color;
+                        font-size: 1.6em;
+                        
+                    }
+                    ;
+
+                    .sub-menu{
+                        position: absolute;
+                        background-color: rgb(239, 235, 228);
+                        min-width: 250px;
+                        padding: 0;
+                        margin: 0;
+                        line-height: 10px;
+                        list-style-type: none;
+                        right: 0;
+                        padding:0 30px;
+                        
+                        .sub-menu-item{
+                            padding: 30px 0;
+                            >a {
+                                text-decoration: none;
+                                color: $black-color;
+                                font-size: 1.6em;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 .form-group {
     display: none;
+    
 }
 
 

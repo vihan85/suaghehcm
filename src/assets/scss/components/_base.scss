@@ -36,9 +36,18 @@ html{
     padding-right: 8px;
   
 }
+
+.c-2{
+    flex: 0 0 16.6667%;
+    max-width: 16.6667%;
+}
 .c-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
+}
+.c-10{
+    flex: 0 0 83.3333%;
+    max-width: 83.333%;
 }
 .c-12 {
     flex: 0 0 100%;
