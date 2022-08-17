@@ -8,5 +8,11 @@
 
     @if ($backgroundcolor == $white-color) {
         color: $text-color;
+        @content
     }
 }
+
+@mixin textHover ($textColor) {
+  color: $textColor ;
+  @content
+ }
