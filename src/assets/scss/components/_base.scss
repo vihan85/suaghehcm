@@ -75,15 +75,24 @@ html{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        .site-header_container{
+            display: block;
+                .site-header-right{
+                    margin: 0 auto;
+                }
+        }
         .header-top-right{
-            justify-content: center;
+            
         }
 
         .main-navigation{
-            .main-nav-icon{
+            .main-nav_icon-list{
                 display: block;
-                padding: 8px;
-                margin-bottom: 8px;
+                font-size: 1.5em;
+            }
+            
+            .main-nav-icon{
+                
                 >i{
                     font-size: 1.6em;
                 }
@@ -91,20 +100,24 @@ html{
             
             .menu-header-container{
                 .nav-menu{
-                    border-radius: 2px;
-                    display: block;
                     flex-direction: column;
                     align-items: flex-start;
-                    max-width: 300px;
-                    background-color: #ccc;
-                    .menu-item{
-                        border-bottom: 1px solid $boder-color;
-                        flex: 1;
-                        display: flex;
-                        >a{ 
-                        }
-
+                    width: 350px;
+                    .header-search{
+                            display: none;
                     }
+                    .menu-item{
+                        line-height: normal;
+                        padding: 20px;
+                        align-self: stretch;
+                       .sub-menu{
+                        left: 0;
+                        z-index: 1;
+                        width: 100%;
+                       }
+                    }
+
+                   
                 }
     
             }

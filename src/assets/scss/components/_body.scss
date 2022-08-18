@@ -13,15 +13,30 @@
             border-radius: 2px;
             height: 85px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             cursor: pointer;
             background-clip: content-box; // css cho khoảng nên của element
-           
-            .service-item_title{
-                font-weight: 600;
-                font-size: 1.2em;
+            >i{
+                flex-basis: 25%;
+                text-align: center;
+                font-size: 3em;
+                align-self: 25%;
+            }
+            .service-item_content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .service-item_title{
+                    font-weight: 600;
+                    font-size: 1.2em;
+                }
+                .service-item_sub-title {
+                    text-align: center;
+                    font-size: 1em;
+                    color: $text-color;
+                    
+                }
             }
             .service-item_title:hover{
                 // @include textHover($primari-color) {
@@ -30,18 +45,9 @@
             }
 
             .service-item_title:hover{
-                animation: changeColor 0.2s ease;
-                animation-fill-mode: forwards;
-                animation-delay: 0.1;
+             @include textHover($black-color)   
             }
-
-            .service-item_sub-title {
-                margin: 10px 60px 0 60px;
-                text-align: center;
-                font-size: 1em;
-                color: $text-color;
-                
-            }
+            
             
         }
             >br {

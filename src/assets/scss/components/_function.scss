@@ -2,7 +2,9 @@
     background-color: $backgroundcolor;
 
     @if ($backgroundcolor == $primari-color) {
-        color: $white-color;
+        >a {
+            color: $white-color
+        }
         @content;
     }
 
@@ -10,9 +12,12 @@
         color: $text-color;
         @content
     }
-}
+};
 
 @mixin textHover ($textColor) {
   color: $textColor ;
-  @content
+  @if($textColor == $black-color) {
+    color: $primari-color;
+  }
+  animation: opacity 0.3s linear
  }
