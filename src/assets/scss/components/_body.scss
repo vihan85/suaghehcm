@@ -64,6 +64,8 @@
             .slider_full{
                 width: inherit;
                 height: inherit;
+                transition: transform 2s;
+
                     .slider_fill-img{
                         position: absolute;
                         height: inherit;
