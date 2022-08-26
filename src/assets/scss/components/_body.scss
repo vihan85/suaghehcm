@@ -274,10 +274,50 @@
 }
 
 .project{
-    .project-left{
 
+    .project-img{
+        padding-top: 50%;
     }
-    .project-right{
+
+    .project-container{
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
+    }
+
+    .project-title{
+
+        >a{
+            text-decoration: none;
+            color: $black-color;
+            &:hover {
+                @include textHover($black-color)
+            }
+        }
+        font-size: 4em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .project-content{
+        text-align: justify;
+        padding-top: 20px;
+        font-size: 2em;
+        color: $text-color;
+        font-weight: 300;
+        
+    }
+    .btn-seemore{
+        position: absolute;
+        top: 80%;
+        right: 0;
+}
+}
+.project-outstanding{
+    .project-outstanding_background{
+        padding-top: 50%;
     }
 }

@@ -15,6 +15,9 @@ $(document).ready(function () {
 
     render('.slider_fill-img');
     render('.product_item-img', 0, "content-box");
+    render('.project-img');
+    render('.project-outstanding_background');
+
     
     // function slider() {
     //     $('.slider_full .slider_fill-img:gt(0)').hide();
