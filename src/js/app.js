@@ -1,7 +1,5 @@
+
 $(document).ready(function () {
-    
-
-
     let imgElement = $('.slider_fill-img');
     let imgElementLength = $('.slider_fill-img').length;
 
@@ -22,9 +20,6 @@ $(document).ready(function () {
     render('.project-outstanding_item');
     render('.project-outstanding_background');
 
-
-
-    
     // function slider() {
     //     $('.slider_full .slider_fill-img:gt(0)').hide();
     //     console.log($(".slider_full").attr('data-speed'))
@@ -75,11 +70,5 @@ $(document).ready(function () {
             $('.site').removeClass("scroll-menu")
         };
     });
-
-//slider
-
-
-
-
 });
 
