@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    
+    font-family: 'Roboto', Times, serif, sans-serif;
+};
+
+.space-top{
+    margin-top: 80px;
+}
+.grid{
+    width: 100%;
+    display: block;
+    padding: 0;
+};
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+};
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px
+};
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+  
+}
+
+.c-2{
+    flex: 0 0 16.6667%;
+    max-width: 16.6667%;
+}
+.c-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.c-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+.c-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.c-10{
+    flex: 0 0 83.3333%;
+    max-width: 83.333%;
+}
+.c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+// tablet
+@media (min-width: 740) {
+    .row {
+        margin-left: -8px;
+        margin-right: -8px
+    };
+
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+};
+
+// tablet and low resolution
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    };
+    .site-header{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        .site-header_container{
+            display: block;
+                .site-header-right{
+                    margin: 0 auto;
+                }
+        }
+        .header-top-right{
+            
+        }
+
+        .main-navigation{
+            .main-nav_icon-list{
+                display: block;
+                font-size: 1.5em;
+            }
+            
+            .main-nav-icon{
+                
+                >i{
+                    font-size: 1.6em;
+                }
+            }
+            
+            .menu-header-container{
+                .nav-menu{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 350px;
+                    .header-search{
+                            display: none;
+                    }
+                    .menu-item{
+                        line-height: normal;
+                        padding: 20px;
+                        align-self: stretch;
+                       .sub-menu{
+                        left: 0;
+                        z-index: 1;
+                        width: 100%;
+                       }
+                    }
+
+                   
+                }
+    
+            }
+
+        }
+    }
+    .m-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .service-item{
+        margin: 10px 0;
+    }
+    
+}
+
+//Pc and low solution
+@media (min-width: 1024px) and (max-width: 1239) {
+    .wide {
+        width: 984px;
+    };
+};
+
+@media (min-width: 1240px) and (max-width: 1490px) {
+    .wide {
+        width: 1200 px;
+    };
+};
+
+@media (min-width: 1500px) {
+    .col{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .row{
+        margin-left: -12px;
+        margin-right: -12px;
+     
+    }
+}
+//mixin
+
+
+//Button
+.btn{
+    width: 118px;
+    background-color: $primari-color;
+    outline: none;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    color: $white-color;
+    font-size:1.6em;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover{
+        background-color: $btn-hover;
+    }
+};
+.line-height{
+    line-height: 1.6;
+}
