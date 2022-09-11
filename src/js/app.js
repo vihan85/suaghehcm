@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+
+
     let imgElement = $('.slider_fill-img');
     let imgElementLength = $('.slider_fill-img').length;
 
@@ -17,7 +20,7 @@ $(document).ready(function () {
     render('.product_item-img', 0, "content-box");
     render('.project-img');
     render('.project-outstanding_item');
-    render('.project-outstanding_wrapper');
+    render('.project-outstanding_background');
 
 
 
@@ -53,33 +56,30 @@ $(document).ready(function () {
     // }, $(".slider_full").attr('data-speed'));
 
 
-    var heightMenu = $('.site-header').outerHeight();
+    var heightMenu = $('.main-header').outerHeight();
+    
+    console.log(heightMenu)
     $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
-        console.log(scroll)
+        $(".main-header").css("top", "-" + heightMenu + "px")
 
-        if(scroll === 0) {
-            $(".site-header").css({"top": "2", "position": "unset"});
-            $(".site-header").css({"top": "0","position": ""})
-        }
-
-
-        $(".site-header").css({"top": "-100px","position": ""})
-        if(scroll >500) {
-            $(".header").css("position", "")
+        if (scroll > heightMenu) {
             $('.site').addClass("scroll-menu")
-   
         }
 
-        if(scroll < 400) {
-            $(".site-header").attr('style', 'top: -100px !important');
-            
+        if (scroll < heightMenu ) {
+            $(".main-header").attr('style', 'top: -'+ heightMenu +'px !important');
         }
-        if(scroll < 140) {
+
+        if (scroll < 36) {
             $('.site').removeClass("scroll-menu")
         };
     });
 
+//slider
 
-})
+
+
+
+});
 
