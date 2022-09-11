@@ -1,13 +1,17 @@
-.test1 {
-    background-color: red;
+ 
 
-    .test2 {
-        background-color: yellow;
-    }
-    .test3 {
-        background-color: black;;
-    }
-}
+@import 'components/_variables.scss';
+
+@import 'components/_function.scss';
+
+
+@import 'components/_responsive.scss';
+
+
 
 
 @import 'components/_header.scss';
+
+@import 'components/body.scss';
+
+@import 'components/_base.scss'; 

@@ -63,7 +63,7 @@
   },
   "scripts": {
     "test": "test",
-    "scss": "sass --watch ./src/scss/index.scss ./src/css/index.css",
+    "scss": "sass --watch ./src/assets/scss/index.scss ./src/dist/css/index.css",
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --watch"
   },
