@@ -1,0 +1,71 @@
+.footer-container{
+
+        min-height: 400px;
+        background-color: $white-color;
+    
+
+    .footer-left{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .footer_slogan {
+            >span{
+                color: $primari-color;
+                font-weight: 800;
+            }
+            font-size: 1.6em;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .footer_logo{
+            .footer_logo-img{
+                width: 249px; // cần chỉnh lại k fix cứng
+                height: 150px; // cần chỉnh lại k fix cứng
+            }
+        }
+        
+        .footer_content-text{
+            .foorter-contact{
+            }
+            .footer-info{
+
+            }
+        }
+    }
+    .footer-right{
+        .footer_content-text{ 
+            list-style-type: none;
+            >li{
+                text-transform: uppercase;
+              
+                padding: 10px 0;
+                color: $text-color;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .foorter-contact{
+            display: flex;
+            >p{
+                padding: 0 20px;
+                text-align: left;
+                color: $text-color;
+            }
+        }
+        .footer_content{
+         
+            font-size: 1.6em;
+            line-height: 1.6;
+            
+            .footer_content-title{
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 20px 0;
+                color: $black-color;
+
+            }
+        }
+    }
+}

@@ -7,11 +7,11 @@
 
 @import 'components/_responsive.scss';
 
+@import 'components/_base.scss'; 
 
 
 
 @import 'components/_header.scss';
 
-@import 'components/body.scss';
-
-@import 'components/_base.scss'; 
+@import 'components/_body.scss';
+@import 'components/footer.scss';

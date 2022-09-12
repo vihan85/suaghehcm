@@ -78,8 +78,9 @@
 
         .slider_full {
             width: inherit;
-            height: inherit;
-            transition: transform 2s;
+            height: inherit;   
+            // transition: transform 2s;
+            overflow: hidden;
 
             .slider_fill-img {
                 position: absolute;
@@ -90,6 +91,7 @@
                 background-position: center;
                 background-size: cover;
                 top: 0;
+                height: 300px;
 
 
                 .slider_fill-inner {
@@ -111,8 +113,7 @@
 
 
     .entry-header {
-        margin: 10px 0;
-
+     
         .entry-title {
             position: relative;
             overflow: hidden;
@@ -169,7 +170,7 @@
 
     .products_wrapper {
         margin: 20px 0;
-        overflow: auto;
+        overflow: hidden;
         flex-wrap: nowrap;
 
         .product_item {
@@ -319,15 +320,7 @@
 }
 }
 .project-outstanding {
-    .spacer {
-        padding-top: 50px;
-            .spacer_inner {
-                height: 50px;
-                width: 1px;
-                background-color: white;
-                margin: 0 auto
-        }
-    }
+   
     .project-outstanding_wrapper_separation{
 
     }
@@ -352,6 +345,8 @@
             }
 
             .project-outstanding_content {
+                background-color: rgba($color: #3b3939, $alpha: 1.0) ;
+                min-height: 250px;
                 .project-outstanding_title {
                     >span {
                         text-transform: uppercase;
