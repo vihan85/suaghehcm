@@ -34,6 +34,13 @@
         }
     }
     .footer-right{
+        .register{
+            >label{
+                color: $text-color;
+                
+
+            }
+        }
         .footer_content-text{ 
             list-style-type: none;
             >li{

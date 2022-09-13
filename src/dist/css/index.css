@@ -733,6 +733,9 @@ html {
   width: 249px;
   height: 150px;
 }
+.footer-container .footer-right .register > label {
+  color: #9b9b9b;
+}
 .footer-container .footer-right .footer_content-text {
   list-style-type: none;
 }
