@@ -331,6 +331,7 @@ html {
 }
 .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item .sub-menu .sub-menu-item:hover {
   background-color: #85d3d3;
+  color: #fff;
 }
 .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item .sub-menu .sub-menu-item:hover > a {
   color: #fff;
@@ -679,7 +680,7 @@ html {
   color: #85d3d3;
 }
 .project-outstanding .project-outstanding_inner {
-  padding: 20px;
+  padding-bottom: 80px;
 }
 .project-outstanding .project-outstanding_inner .project-outstanding_item {
   padding-top: 70%;
@@ -729,6 +730,9 @@ html {
   color: #85d3d3;
   font-weight: 800;
 }
+.footer-container .footer-left .footer_logo > a {
+  text-decoration: none;
+}
 .footer-container .footer-left .footer_logo .footer_logo-img {
   width: 249px;
   height: 150px;
@@ -736,11 +740,35 @@ html {
 .footer-container .footer-right .register > label {
   color: #9b9b9b;
 }
+.footer-container .footer-right .register .register_input {
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border-color: #ebebeb;
+}
+.footer-container .footer-right .register .register_input-btn {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: #85d3d3;
+  background-color: #85d3d3;
+  color: #fff;
+  border-color: #ebebeb;
+}
+.footer-container .footer-right .register .register_input-btn > a {
+  color: #fff;
+}
+.footer-container .footer-right .register .register_input-btn:hover {
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: rgb(126, 182, 182);
+}
 .footer-container .footer-right .footer_content-text {
   list-style-type: none;
 }
 .footer-container .footer-right .footer_content-text > li {
   text-transform: uppercase;
+  align-items: center;
   padding: 10px 0;
   color: #9b9b9b;
 }
@@ -755,6 +783,9 @@ html {
   text-align: left;
   color: #9b9b9b;
 }
+.footer-container .footer-right .foorter-contact > i {
+  font-size: 1.3em;
+}
 .footer-container .footer-right .footer_content {
   font-size: 1.6em;
   line-height: 1.6;
@@ -764,6 +795,19 @@ html {
   font-weight: 600;
   padding: 20px 0;
   color: black;
+}
+
+.footer-secondary {
+  height: 80px;
+  background-color: #3b3939;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.footer-secondary > P {
+  padding: 10px;
+  font-size: 1.3em;
+  color: #9b9b9b;
 }
 
 /*# sourceMappingURL=index.css.map */
