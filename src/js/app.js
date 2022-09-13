@@ -3,31 +3,31 @@ $(document).ready(function () {
     let imgElement = $('.slider_fill-img');
     let imgElementLength = $('.slider_fill-img').length;
 
-    function render(element, valueTransform, backgroundClip) {
+    function render(element, height, backgroundClip) {
 
         $(element).each(function (index, value) {
             let url = $(value).attr('data-bg-image');
-            $(value).css({ "background": "url(" + url + ")", "background-size": "cover", "background-repeat": "no-repeat", "background-position": "center", "background-clip": backgroundClip });
+            $(value).css({ "background": "url(" + url + ")", "background-size": "cover", "background-repeat": "no-repeat", "background-position": "center", "background-clip": backgroundClip, "height": height });
         });
         $(".slider_full").attr('data-active', 1);
         $(".slider_full").attr('data-speed', 2000);
 
     };
 
-    render('.slider_fill-img');
+    render('.slider_fill-img', "");
     render('.product_item-img', 0, "content-box");
     render('.project-img');
     render('.project-outstanding_item');
     render('.project-outstanding_background');
 
-    // function slider() {
-    //     $('.slider_full .slider_fill-img:gt(0)').hide();
-    //     console.log($(".slider_full").attr('data-speed'))
-    //     setInterval(function () {
-    //         $(".slider_full :first-child").fadeOut(4000).next('.slider_fill-img').fadeIn(4000).end().appendTo('.slider_full')
-    //     }, $(".slider_full").attr('data-speed'))
-    // }
-    // slider()
+    function slider() {
+        $('.slider_full .slider_fill-img:gt(0)').hide();
+        $(".slider_full").attr('data-speed')
+        setInterval(function () {
+            $(".slider_full :first-child").fadeOut().next('.slider_fill-img').fadeIn().end().appendTo('.slider_full')
+        }, $(".slider_full").attr('data-speed'))
+    }
+    slider()
 
 
     // setInterval(function () {
@@ -53,7 +53,6 @@ $(document).ready(function () {
 
     var heightMenu = $('.main-header').outerHeight();
     
-    console.log(heightMenu)
     $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
         $(".main-header").css("top", "-" + heightMenu + "px")
