@@ -1,3 +1,7 @@
+
+
+
+
 .header {
 
     .header-top {
@@ -250,32 +254,34 @@
     }
 }
 
-.scroll-menu {
-    .main-header {
-        position: fixed;
-        top: 0px !important;
-        z-index: 1;
-        background-color: #fff;
-        right: 0;
-        left: 0;
-        transition: top 1s;
-        border-bottom: 1px solid $boder-color;
+@include responsive (pc) {
+    .scroll-menu {
+        .main-header {
+            position: fixed;
+            top: 0px !important;
+            z-index: 1;
+            background-color: #fff;
+            right: 0;
+            left: 0;
+            transition: top 1s;
+            border-bottom: 1px solid $boder-color;
+        }
+    
+        .site-main {
+            margin-top: 100px;
+        }
+    
+    
+    
+        //    transition: background-color 2s;
+    
+        .site-header_container {}
+    
+        .site-header-right {}
+    
     }
-
-    .site-main {
-        margin-top: 100px;
-    }
-
-
-
-    //    transition: background-color 2s;
-
-    .site-header_container {}
-
-    .site-header-right {}
 
 }
-
 .form-group {
     display: none;
 
@@ -347,7 +353,30 @@
 }
 
 @include responsive(phone) {
-    .site-title {
-        background-color: blue;
+    .header{
+        .site-header{
+            .site-header_container{
+                flex-direction: column;
+            }
+            .main-navigation{
+                .main-nav_icon-list{
+        
+                }
+                .btn-menu{
+        
+                }
+                .menu-header-container{
+                    .nav-menu{
+                        flex-direction: column;
+                        align-items: flex-start;
+                        .menu-item{
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
+

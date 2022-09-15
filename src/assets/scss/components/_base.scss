@@ -16,7 +16,7 @@ html{
 .grid{
     width: 100%;
     display: block;
-    padding: 0;
+    padding: 0 12px;
 };
 
 .grid.wide {
@@ -34,7 +34,6 @@ html{
 .col {
     padding-left: 8px;
     padding-right: 8px;
-  
 }
 
 .c-2{
@@ -61,21 +60,62 @@ html{
     flex: 0 0 100%;
     max-width: 100%;
 }
-// tablet
-@media (min-width: 740) {
-    .row {
-        margin-left: -8px;
-        margin-right: -8px
-    };
 
-    .col {
-        padding-left: 8px;
-        padding-right: 8px;
+@include responsive(pc) {
+    .l-2{
+        flex: 0 0 16.6667%;
+        max-width: 16.6667%;
     }
-};
+    .l-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .l-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .l-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .l-10{
+        flex: 0 0 83.3333%;
+        max-width: 83.333%;
+    }
+    .l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 
-// tablet and low resolution
-@media (min-width: 740px) and (max-width: 1023px) {
+@include responsive(tablet) {
+    .m-2{
+        flex: 0 0 16.6667%;
+        max-width: 16.6667%;
+    }
+    .m-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .m-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .m-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m-10{
+        flex: 0 0 83.3333%;
+        max-width: 83.333%;
+    }
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@include responsive(tablet) {
     .wide {
         width: 644px;
     };
@@ -91,7 +131,7 @@ html{
         .header-top-right{
             
         }
-
+    
         .main-navigation{
             
             .btn-menu{
@@ -132,16 +172,16 @@ html{
                         width: 100%;
                        }
                     }
-
+    
                    
                 }
     
             }
-
+    
         }
         
     }
-
+    
     .project-container{
         .btn-seemore{
             position: unset;
@@ -161,34 +201,42 @@ html{
     
 }
 
-//Pc and low solution
-@media (min-width: 1024px) and (max-width: 1239) {
-    .wide {
-        width: 984px;
-    };
-};
-
-@media (min-width: 1240px) and (max-width: 1490px) {
-    .wide {
-        width: 1200 px;
-    };
-};
-
-@media (min-width: 1500px) {
-    .col{
-        padding-left: 12px;
-        padding-right: 12px;
+@include responsive(phone) {
+    .s-2{
+        flex: 0 0 16.6667%;
+        max-width: 16.6667%;
     }
-    .row{
-        margin-left: -12px;
-        margin-right: -12px;
-     
+    .s-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .s-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .s-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .s-10{
+        flex: 0 0 83.3333%;
+        max-width: 83.333%;
+    }
+    .s-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
-//mixin
 
 
-//Button
+
+
+
+
+
+
+
+
 .btn{
     width: 118px;
     background-color: $primari-color;
