@@ -96,5 +96,16 @@ $(document).ready(function () {
     
 
 
+
+
+
+// btn-menu-click
+
+$('.btn-menu').click(function(){
+    $('.btn-menu--acctive').toggle(500 , function() {
+        // $('.btn-menu--acctive').css("tranform", "translateX(100%)")
+        
+    })
+})
 });
 

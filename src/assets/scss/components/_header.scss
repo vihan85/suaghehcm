@@ -54,9 +54,7 @@
                 &.header-top-left_language {
 
 
-                    @include responsive(phone) {
-                        background-color: blue;
-                    }
+                    
                 }
 
                 &.header-top-left_login {
@@ -65,9 +63,7 @@
                         font-size: 1.2em;
                     }
 
-                    @include responsive(phone) {
-                        background-color: blueviolet;
-                    }
+                   
                 }
             }
 
@@ -163,19 +159,7 @@
 
 
                         .sub-menu {
-                            position: absolute;
-                            background-color: $white-color;
-                            min-width: 250px;
-                            line-height: 10px;
                             list-style-type: none;
-                            right: -100%;
-                            top: 100%;
-                            border-radius: 2px;
-                            box-shadow: 1px 1px 0px 1px #888888;
-                            display: none;
-                            z-index: 100;
-
-
                             .sub-menu-item {
                                 padding: 20px 20px;
                                 border-bottom: 1px solid $boder-color;
