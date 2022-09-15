@@ -1,98 +1,111 @@
-.footer-container{
+.footer-container {
+    padding: 0 12px !important;
+    min-height: 400px;
+    background-color: $white-color;
 
-        min-height: 400px;
-        background-color: $white-color;
-    
 
-    .footer-left{
+    .footer-left {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+
         .footer_slogan {
-            >span{
+            >span {
                 color: $primari-color;
                 font-weight: 800;
             }
+
             font-size: 1.6em;
             line-height: 1.6;
             text-align: center;
         }
-        .footer_logo{
-            >a{
+
+        .footer_logo {
+            >a {
                 text-decoration: none;
             }
-            .footer_logo-img{
+
+            .footer_logo-img {
                 width: 249px; // cần chỉnh lại k fix cứng
                 height: 150px; // cần chỉnh lại k fix cứng
             }
         }
-        
-        .footer_content-text{
-            .foorter-contact{
-            }
-            .footer-info{
 
-            }
+        .footer_content-text {
+            .foorter-contact {}
+
+            .footer-info {}
         }
     }
-    .footer-right{
-        .register{
-            >label{
+
+    .footer-right {
+        .register {
+            >label {
                 color: $text-color;
-        }
-        .register_input{
-            height: 30px;
-            margin-top: 10px;
-            border-radius: 10px;
-            border-color:$boder-color ;
-        }
-        .register_input-btn{
-            height: 30px;
-            width: 80px;
-            border-radius: 10px;
-            background-color: $primari-color;
-            @include backgroundText1($primari-color);
-            border-color: $boder-color;
-            &:hover{
-                cursor: pointer;
-                transition: background-color 0.3s;
-                background-color: rgb(126, 182, 182);
             }
 
-            
+            .register_input {
+                height: 30px;
+                margin-top: 10px;
+                border-radius: 10px;
+                border-color: $boder-color ;
+            }
+
+            .register_input-btn {
+                height: 30px;
+                width: 80px;
+                border-radius: 10px;
+                background-color: $primari-color;
+                @include backgroundText1($primari-color);
+                border-color: $boder-color;
+
+                &:hover {
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                    background-color: rgb(126, 182, 182);
+                }
+
+
+            }
         }
-    }
-        .footer_content-text{ 
+
+        .footer_content-text {
             list-style-type: none;
-            >li{
+
+            >li {
                 text-transform: uppercase;
                 align-items: center;
                 padding: 10px 0;
                 color: $text-color;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
             }
         }
-        .foorter-contact{
+
+        .foorter-contact {
             display: flex;
-            >p{
+
+            >p {
                 padding: 0 20px;
                 text-align: left;
                 color: $text-color;
             }
-            >i{
+
+            >i {
                 font-size: 1.3em;
             }
         }
-        .footer_content{
-         
+
+        .footer_content {
+
             font-size: 1.6em;
             line-height: 1.6;
-          
-            
-            .footer_content-title{
+
+
+            .footer_content-title {
                 text-transform: uppercase;
                 font-weight: 600;
                 padding: 20px 0;
@@ -102,13 +115,15 @@
         }
     }
 }
-.footer-secondary{
+
+.footer-secondary {
     height: 80px;
     background-color: #3b3939;
     display: flex;
     justify-content: center;
     align-items: end;
-    >P{
+
+    >P {
         padding: 10px;
         font-size: 1.3em;
         color: $text-color;

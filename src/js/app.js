@@ -4,17 +4,17 @@ $(document).ready(function () {
     let imgElementLength = $('.slider_fill-img').length;
 
     function render(element, height, backgroundClip) {
-
+        
         $(element).each(function (index, value) {
             let url = $(value).attr('data-bg-image');
-            $(value).css({ "background": "url(" + url + ")", "background-size": "cover", "background-repeat": "no-repeat", "background-position": "center", "background-clip": backgroundClip, "height": height });
+            $(value).css({ "background": "url(" + url + ")", "background-size": "cover", "background-repeat": "no-repeat", "background-position": "center", "background-clip": backgroundClip, "padding-top": height });
         });
         $(".slider_full").attr('data-active', 1);
         $(".slider_full").attr('data-speed', 2000);
 
     };
 
-    render('.slider_fill-img', "");
+    render('.slider_fill-img', "33.333%");
     render('.product_item-img', 0, "content-box");
     render('.project-img');
     render('.project-outstanding_item');
@@ -69,5 +69,32 @@ $(document).ready(function () {
             $('.site').removeClass("scroll-menu")
         };
     });
+
+
+
+
+
+    $(".header-search").click(function() {
+
+        $(".header-search_search").toggle("500", "linear" );
+        
+    })
+    
+    $(document).ready(function(){
+        $('.slider_full-slick').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            arrows: false
+        });
+
+       
+      });
+
+    
+
+
 });
 
