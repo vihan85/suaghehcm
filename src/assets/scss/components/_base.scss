@@ -79,6 +79,7 @@ html {
     .header {
         .site-header {
             .main-navigation {
+                
                 .menu-header-container {
                     .nav-menu {
                         .menu-item {
@@ -88,7 +89,6 @@ html {
                                 min-width: 250px;
                                 line-height: 10px;
                                 list-style-type: none;
-                                right: -100%;
                                 top: 100%;
                                 border-radius: 2px;
                                 box-shadow: 1px 1px 0px 1px #888888;
@@ -369,6 +369,7 @@ html {
             min-height: auto;
 
             .main-navigation {
+                overflow: auto;
                 position: fixed;
                 right: 0;
                 bottom: 0;
