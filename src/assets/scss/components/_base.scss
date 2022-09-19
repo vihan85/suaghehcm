@@ -469,16 +469,22 @@ html {
 
         }
 
-    }
-
-    // slider
-    .container {
-        .slider_full-slick {
-           
-
-            .slider_full-slick-img {}
+    }      
+}
+// slider
+   .slider_full-slick {
+    .slider_full-slick-container {
+        display: flex;
+        .slider_full-slick-img {
+            flex: 2;
+            height: 500px;
+            overflow: hidden;
+        }
+        .slider_full-slick-content {
+            flex: 1;
         }
     }
+
 }
 
 .btn {
