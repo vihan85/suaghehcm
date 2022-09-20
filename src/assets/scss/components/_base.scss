@@ -29,7 +29,9 @@ html {
     margin: 0 auto;
 }
 
-;
+.gutter-top{
+    margin-top: 12px;
+}
 
 .row {
     display: flex;
@@ -470,24 +472,94 @@ html {
 
         }
 
-    }      
+    }  
+    .slider_full-slick {
+        .slider_full-slick-container {
+            display: flex;
+    
+            .slider_full-slick-img {
+                overflow: hidden;
+                height: auto;
+            }
+    
+            .slider_full-slick-content {
+               display: none;
+            }
+        }
+    
+    }
+        
 }
 // slider
-   .slider_full-slick {
+
+
+.slider_full-slick {
     .slider_full-slick-container {
         display: flex;
+
         .slider_full-slick-img {
-            flex: 2;
             height: 500px;
+            flex: 2;
             overflow: hidden;
         }
+
         .slider_full-slick-content {
+            background-color: #dad0d0cc;
             flex: 1;
+            .slider_full-slick-content-wrapper{
+                height: 92%;
+                background: #dad0d0cc;
+                border: 2px solid $white-color;
+                margin: 20px;
+                .slider_content-title{
+                    $space: 40px;
+                    text-align: center;
+                    padding: $space;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 2em;
+                    font-weight: 500;
+                    text-shadow: 2px 0px 9px black;
+                    margin-top: calc($space*2);
+                    transform: translateY(-60px);
+                    opacity: 0;
+                }
+                .slider_content-text{
+                    padding: 0px 20px;
+                    font-size: 1.3em;
+                    text-align: justify;
+
+                }
+            }
         }
     }
 
 }
+.acctive {
+    .slider_full-slick-container {
+       
+        .slider_full-slick-img {
+            
+        }
 
+        .slider_full-slick-content {
+            
+            .slider_full-slick-content-wrapper{
+                
+                .slider_content-title{
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition: opacity 1s, transform 2s;
+                }
+                .slider_content-text{
+                    
+
+                }
+            }
+        }
+    }
+
+}
 .btn {
     width: 118px;
     background-color: $primari-color;
