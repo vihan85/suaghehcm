@@ -1,0 +1,75 @@
+
+.content-container{
+    .content-container_banner{
+        justify-content: center;
+    }
+    .content-container_wapper-contact{
+        position: relative;
+        background-image: url(https://kimfurniture.com/wp-content/uploads/2021/06/13.png);
+        &::after {
+            background-color: rgba(10,0,1,0.9);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            display: block;
+            z-index: 0;
+            content: "";
+        }
+        }
+    .content-container_wapper-info{
+        padding: 20px;
+        background-color: $primari-color;
+        min-height: 300px;
+
+        .form-1{
+            .heading{
+                font-weight: 400;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 10px;
+                color: white;
+                text-transform: uppercase;
+            }
+            .desc{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 1.5em;
+                color: white;
+
+            }
+            .form-group-1{
+                >label{
+                    display: block;
+                    padding: 10px 0;
+                    font-size: 1.6em;
+                    font-weight: 600
+                }
+                >input{
+                    height: 40px;
+                    width: 100%;
+                    font-size: 1.6em;
+                    box-shadow: 4px 4px 12px gray;
+                    outline: none;
+                    border: 1px solid $boder-color;
+                    padding-left: 10px;
+                    border-radius: 10px
+                }
+
+            }
+            .btn{
+                margin-top: 20px;
+                background-color: rgb(230, 155, 155);
+                margin-left: auto;
+                display: block;
+                border-radius: 30px;
+                color: black;
+                box-shadow: 1px 1px 4px grey;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
