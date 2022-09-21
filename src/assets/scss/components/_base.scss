@@ -81,7 +81,7 @@ html {
     .header {
         .site-header {
             .main-navigation {
-                
+
                 .menu-header-container {
                     .nav-menu {
                         .menu-item {
@@ -218,7 +218,7 @@ html {
                 .menu-header-container {
                     .nav-menu {
                         display: block;
-                
+
                         .menu-item {
                             line-height: 50px;
                             border-bottom: 1px solid #616161;
@@ -278,7 +278,7 @@ html {
         }
     }
 
-   
+
 
     .m-6 {
         flex: 0 0 50%;
@@ -364,9 +364,9 @@ html {
         .btn-menu {
             display: block;
         }
-        
+
         .site-header {
-            
+
 
             min-height: auto;
 
@@ -384,7 +384,7 @@ html {
 
                 .menu-header-container {
                     .nav-menu {
-                        
+
                         .menu-item {
                             line-height: 50px;
                             border-bottom: 1px solid #616161;
@@ -445,7 +445,7 @@ html {
     }
 
     .btn-menu--acctive {
-      
+
             .menu-header-container-overlay{
                 position: fixed;
                 top: 0;
@@ -457,13 +457,13 @@ html {
             }
             .site-header {
                 .main-navigation {
-                    
-    
+
+
                 }
-    
+
             }
-    
-        
+
+
         .site-header {
             .main-navigation {
                 transform: translateX(0);
@@ -472,23 +472,24 @@ html {
 
         }
 
-    }  
+    }
     .slider_full-slick {
+
         .slider_full-slick-container {
             display: flex;
-    
+
             .slider_full-slick-img {
                 overflow: hidden;
                 height: auto;
             }
-    
+
             .slider_full-slick-content {
                display: none;
             }
         }
-    
+
     }
-        
+
 }
 // slider
 
@@ -537,22 +538,22 @@ html {
 }
 .acctive {
     .slider_full-slick-container {
-       
+
         .slider_full-slick-img {
-            
+
         }
 
         .slider_full-slick-content {
-            
+
             .slider_full-slick-content-wrapper{
-                
+
                 .slider_content-title{
                     opacity: 1;
                     transform: translateY(0);
                     transition: opacity 1s, transform 2s;
                 }
                 .slider_content-text{
-                    
+
 
                 }
             }
@@ -610,4 +611,8 @@ html {
     display: none;
 }
 
-.btn-menu--acctive {}
+.max-width{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
