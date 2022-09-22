@@ -54,7 +54,7 @@
                 &.header-top-left_language {
 
 
-                    
+
                 }
 
                 &.header-top-left_login {
@@ -63,7 +63,7 @@
                         font-size: 1.2em;
                     }
 
-                   
+
                 }
             }
 
@@ -250,20 +250,21 @@
             left: 0;
             transition: top 1s;
             border-bottom: 1px solid $boder-color;
+            z-index: 3;
         }
-    
+
         .site-main {
             margin-top: 100px;
         }
-    
-    
-    
+
+
+
         //    transition: background-color 2s;
-    
+
         .site-header_container {}
-    
+
         .site-header-right {}
-    
+
     }
 
 }
@@ -345,14 +346,14 @@
             }
             .main-navigation{
                 .main-nav_icon-list{
-        
+
                 }
                 .btn-menu{
-        
+
                 }
                 .menu-header-container{
                     .menu-header-container-overlay{
-                        
+
                     }
                     .nav-menu{
                         flex-direction: column;
