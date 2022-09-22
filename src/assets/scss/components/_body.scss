@@ -128,7 +128,7 @@
 
 
 .slider_full-slick {
-    
+
     .slider_full-slick-img {
         >img {
             width: 100%;
@@ -371,6 +371,12 @@
                 color: $white-color;
                 font-size: 1.6em;
                 padding: 0 20px;
+                height: 100px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                
 
             }
 
