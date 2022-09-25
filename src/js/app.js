@@ -5,17 +5,15 @@ $(document).ready(function () {
     function render(element, height, backgroundClip) {
         $(element).each(function (index, value) {
             let url = $(value).attr('data-bg-image');
-            $(value).css({ "background": "url(" + url + ")", "background-size": "cover", "background-repeat": "no-repeat", "background-position": "center", "background-clip": backgroundClip, "padding-top": height });
+            $(value).children("img").attr('src',url)
         });
         $(".slider_full").attr('data-active', 1);
         $(".slider_full").attr('data-speed', 2000);
     };
 
-    render('.slider_fill-img', "33.333%");
-    render('.product_item-img', 0, "content-box");
+    render('.product_item-img',);
     render('.project-img');
-    render('.project-outstanding_item');
-    render('.project-outstanding_background');
+    render('.project-outstanding_item')
 
     function slider() {
         $('.slider_full .slider_fill-img:gt(0)').hide();
