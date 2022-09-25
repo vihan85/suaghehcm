@@ -1,7 +1,3 @@
-
-
-
-
 .header {
 
     .header-top {
@@ -10,6 +6,9 @@
         display: flex;
         align-items: center;
         font-weight: 400;
+        .site-header_logo-mobile{
+            display: none;
+        }
 
         .header-top_tell {
             color: $text-color;
@@ -23,9 +22,6 @@
             color: rgb(89, 86, 86)
         }
     }
-
-    ;
-
     .header-top-left {
         margin-right: 8px;
         font-size: 1.5em;
@@ -34,8 +30,6 @@
         color: $text-color;
         margin-left: auto;
         z-index: 1;
-
-
         >ul {
             position: relative;
             display: flex;
@@ -45,25 +39,15 @@
             li {
                 margin-left: 36px;
                 cursor: pointer;
-
                 a {
                     color: $text-color;
                     text-decoration: none;
                 }
-
-                &.header-top-left_language {
-
-
-
-                }
-
                 &.header-top-left_login {
                     .header-top-left_items-icon {
                         margin: 0 4px;
                         font-size: 1.2em;
                     }
-
-
                 }
             }
 
@@ -76,7 +60,6 @@
                 right: 67%;
                 top: 3%;
                 display: block;
-
             }
         }
 
@@ -85,14 +68,12 @@
                 display: none;
                 flex-direction: column;
                 min-width: 220px;
-                // min-height: 120px;
                 border: 1px solid $boder-color;
             }
         }
     }
 
     //header
-
     .site-header {
         min-height: $headerHeight;
         right: 0;
@@ -152,15 +133,19 @@
                             font-size: 1.6em;
                             text-transform: uppercase;
                             font-weight: 600;
-
                         }
-
-
-
 
                         .sub-menu {
                             list-style-type: none;
                             display: none;
+                            border-radius: 3px;
+                            position: absolute;
+                            z-index: 1;
+                            min-width: 300px;
+                            background: white;
+                            line-height: 0;
+                            box-shadow: 4px 4px 14px #ddd;
+
                             .sub-menu-item {
                                 padding: 20px 20px;
                                 border-bottom: 1px solid $boder-color;
@@ -185,7 +170,9 @@
                             }
 
                             .sub-menu-item:hover {
-                                @include backgroundText1($primari-color)
+                                @include backgroundText1($primari-color){
+
+                                }
                             }
                         }
                     }
@@ -239,133 +226,8 @@
     }
 }
 
-@include responsive (pc) {
-    .scroll-menu {
-        .main-header {
-            position: fixed;
-            top: 0px !important;
-            z-index: 1;
-            background-color: #fff;
-            right: 0;
-            left: 0;
-            transition: top 1s;
-            border-bottom: 1px solid $boder-color;
-            z-index: 3;
-        }
 
-        .site-main {
-            margin-top: 100px;
-        }
-
-
-
-        //    transition: background-color 2s;
-
-        .site-header_container {}
-
-        .site-header-right {}
-
-    }
-
-}
 .form-group {
     display: none;
 
 }
-
-
-
-
-@keyframes opacity {
-    from {
-
-        opacity: 0.2;
-
-    }
-
-    to {
-
-        opacity: 1;
-
-
-    }
-}
-
-@keyframes changeColor {
-    from {
-
-        color: black;
-    }
-
-    to {
-        color: $primari-color;
-    }
-}
-
-@keyframes scale {
-    from {
-        opacity: 0;
-        scale: 0;
-    }
-
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-@keyframes slide {
-    from {
-        opacity: 0.5;
-        transform: translateX(-344%);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slider2 {
-    from {
-        opacity: 0.5;
-        transform: translateY(-100%);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-@include responsive(phone) {
-    .header{
-        .site-header{
-            .site-header_container{
-                flex-direction: column;
-            }
-            .main-navigation{
-                .main-nav_icon-list{
-
-                }
-                .btn-menu{
-
-                }
-                .menu-header-container{
-                    .menu-header-container-overlay{
-
-                    }
-                    .nav-menu{
-                        flex-direction: column;
-                        align-items: flex-start;
-                        .menu-item{
-                            line-height: 50px;
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}
-

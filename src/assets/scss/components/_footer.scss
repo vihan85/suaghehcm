@@ -3,7 +3,6 @@
     min-height: 400px;
     background-color: $white-color;
 
-
     .footer-left {
         display: flex;
         justify-content: center;
@@ -32,11 +31,6 @@
             }
         }
 
-        .footer_content-text {
-            .foorter-contact {}
-
-            .footer-info {}
-        }
     }
 
     .footer-right {
@@ -65,8 +59,6 @@
                     transition: background-color 0.3s;
                     background-color: rgb(126, 182, 182);
                 }
-
-
             }
         }
 
@@ -103,8 +95,6 @@
 
             font-size: 1.6em;
             line-height: 1.6;
-
-
             .footer_content-title {
                 text-transform: uppercase;
                 font-weight: 600;
@@ -127,6 +117,5 @@
         padding: 10px;
         font-size: 1.3em;
         color: $text-color;
-
     }
 }

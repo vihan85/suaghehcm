@@ -2,7 +2,6 @@
 $(document).ready(function () {
     let imgElement = $('.slider_fill-img');
     let imgElementLength = $('.slider_fill-img').length;
-
     function render(element, height, backgroundClip) {
         $(element).each(function (index, value) {
             let url = $(value).attr('data-bg-image');
@@ -65,43 +64,18 @@ $(document).ready(function () {
             })
         }
     })
-    //slick 
-
-
-
-    
-        $('.slider_full-slick').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
-
-        $('.products_wrapper').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            arrows: true,
-           
-            responsive: [
-                {
-                  breakpoint: 720,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                    
-                    
-                  }
-                }
-            ]
-        });
+    //slick
+    $('.slider_full-slick').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
     $('.slider_full-slick').addClass('acctive')
-    
+
 });
 

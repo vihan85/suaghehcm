@@ -108,11 +108,11 @@
             }
             .btn{
                 margin-top: 20px;
-                background-color: rgb(230, 155, 155);
+                background-color: rgb(2 2 2 / 74%);
                 margin-left: auto;
                 display: block;
                 border-radius: 30px;
-                color: black;
+                color: $white-color;
                 box-shadow: 1px 1px 4px grey;
                 &:hover{
                     opacity: 0.8;
