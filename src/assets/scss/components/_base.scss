@@ -517,9 +517,9 @@ html {
                     text-align: center;
                     padding: $space;
                     text-transform: uppercase;
-                    color: white;
-                    font-size: 2em;
-                    font-weight: 500;
+                    color: $primari-color;
+                    font-size: 3em;
+                    font-weight: 900;
                     text-shadow: 2px 0px 9px black;
                     margin-top: calc($space*2);
                     transform: translateY(-60px);
@@ -529,6 +529,10 @@ html {
                     padding: 0px 20px;
                     font-size: 1.3em;
                     text-align: justify;
+                    >p{
+                        text-align: center;
+                        font-size: 1.3em;
+                    }
 
                 }
             }
