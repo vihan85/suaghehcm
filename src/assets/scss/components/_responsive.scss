@@ -129,7 +129,20 @@ $phone: 320px; // Phone screen size.
     }
 
     .header {
+        .site-header{
+            .site-header-right{
+                .site-header-right_logo{
+                    display: none;
+                }
+            }
+        }
         .header-top {
+            .site-header_logo-mobile{
+                display: block;
+                >img{
+                    height: 30px;
+                }
+            }
             position: fixed;
             background-color: $white-color;
             z-index: 50;
@@ -215,7 +228,6 @@ $phone: 320px; // Phone screen size.
             }
         }
     }
-
     .product_item-wrapper-title {
         >a {
             display: block;
@@ -226,6 +238,25 @@ $phone: 320px; // Phone screen size.
             overflow: hidden;
         }
     }
+    .btn-menu--acctive {
+        .menu-header-container-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #35353538;
+            z-index: 1;
+            opacity: 1;
+            transition: opacity 0.3s
+        }
+
+        .site-header {
+            .main-navigation {
+                transform: translateX(0);
+            }
+        }
+    }
 
     .project {
         .btn-seemore {
@@ -234,18 +265,17 @@ $phone: 320px; // Phone screen size.
         }
     }
 
-    .m-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .m-12 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
     .service-item {
         margin: 10px 0;
+    }
+    .project-outstanding {
+        .project-outstanding_inner {
+            .project-outstanding_content {
+                .project-outstanding_text{
+                    height: 150px;
+                }
+            }
+        }
     }
 }
 
@@ -434,6 +464,8 @@ $phone: 320px; // Phone screen size.
             bottom: 0;
             background-color: #35353538;
             z-index: 1;
+            opacity: 1;
+            transition: opacity 0.3s
         }
 
         .site-header {
