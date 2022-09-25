@@ -1,3 +1,7 @@
+
+
+
+
 .header {
 
     .header-top {
@@ -50,9 +54,7 @@
                 &.header-top-left_language {
 
 
-                    @include responsive(phone) {
-                        background-color: blue;
-                    }
+
                 }
 
                 &.header-top-left_login {
@@ -61,9 +63,7 @@
                         font-size: 1.2em;
                     }
 
-                    @include responsive(phone) {
-                        background-color: blueviolet;
-                    }
+
                 }
             }
 
@@ -100,7 +100,7 @@
         border-bottom: 1px solid #ebebeb;
         left: 0;
         transition: top .3s;
-    
+
         .site-header_container {
             height: inherit;
         }
@@ -120,6 +120,10 @@
 
         .main-navigation {
             height: inherit;
+
+            .btn-menu {
+                display: none;
+            }
 
             .main-nav_icon-list {
 
@@ -155,19 +159,8 @@
 
 
                         .sub-menu {
-                            position: absolute;
-                            background-color: $white-color;
-                            min-width: 250px;
-                            line-height: 10px;
                             list-style-type: none;
-                            right: -100%;
-                            top: 100%;
-                            border-radius: 2px;
-                            box-shadow: 1px 1px 0px 1px #888888;
                             display: none;
-                            z-index: 100;
-
-
                             .sub-menu-item {
                                 padding: 20px 20px;
                                 border-bottom: 1px solid $boder-color;
@@ -210,11 +203,27 @@
                     }
 
                     .header-search {
+                        position: relative;
                         cursor: pointer;
                         padding: 10px;
 
                         >i {
                             font-size: 2em;
+                        }
+
+                        .header-search_input {
+                            position: absolute;
+                            right: 20%;
+                            bottom: -70%;
+
+                            .header-search_search {
+                                height: 30px;
+                                width: 250px;
+                                border-radius: 10px;
+                                display: none;
+
+
+                            }
                         }
                     }
 
@@ -230,31 +239,35 @@
     }
 }
 
-.scroll-menu {
-    .main-header {
-        position: fixed;
-        top: 0px  !important ;
-        z-index: 1;
-        background-color: #fff;
-        right: 0;
-        left: 0;
-        transition: top 1s;
-        border-bottom: 1px solid $boder-color;
+@include responsive (pc) {
+    .scroll-menu {
+        .main-header {
+            position: fixed;
+            top: 0px !important;
+            z-index: 1;
+            background-color: #fff;
+            right: 0;
+            left: 0;
+            transition: top 1s;
+            border-bottom: 1px solid $boder-color;
+            z-index: 3;
+        }
+
+        .site-main {
+            margin-top: 100px;
+        }
+
+
+
+        //    transition: background-color 2s;
+
+        .site-header_container {}
+
+        .site-header-right {}
+
     }
-    .site-main {
-        margin-top: 100px;
-    }
-
-
-
-    //    transition: background-color 2s;
-
-    .site-header_container {}
-
-    .site-header-right {}
 
 }
-
 .form-group {
     display: none;
 
@@ -326,7 +339,33 @@
 }
 
 @include responsive(phone) {
-    .site-title {
-        background-color: blue;
+    .header{
+        .site-header{
+            .site-header_container{
+                flex-direction: column;
+            }
+            .main-navigation{
+                .main-nav_icon-list{
+
+                }
+                .btn-menu{
+
+                }
+                .menu-header-container{
+                    .menu-header-container-overlay{
+
+                    }
+                    .nav-menu{
+                        flex-direction: column;
+                        align-items: flex-start;
+                        .menu-item{
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
+
