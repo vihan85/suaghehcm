@@ -191,6 +191,10 @@
     }
 
     .project-title {
+        font-size: 4em;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
         >a {
             text-decoration: none;
             color: $black-color;
@@ -199,9 +203,6 @@
                 @include textHover($black-color)
             }
         }
-        font-size: 4em;
-        font-weight: 400;
-        text-transform: uppercase;
     }
 
     .project-content {

@@ -28,6 +28,10 @@ html {
 .gutter-top {
     margin-top: 12px;
 }
+.no-gutter{
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .row {
     display: flex;

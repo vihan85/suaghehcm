@@ -253,6 +253,10 @@ $phone: 320px; // Phone screen size.
     .grid {
         padding: 6px 12px;
     }
+    .no-gutter{
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .row {
         margin: -6px -12px;
@@ -293,21 +297,35 @@ $phone: 320px; // Phone screen size.
     }
 
     .header {
+        .site-header{
+            .site-header-right{
+                .site-header-right_logo{
+                    display: none;
+                }
+            }
+        }
         .header-top {
             position: fixed;
             background-color: $white-color;
             z-index: 50;
             top: 0;
             justify-content: space-between;
-
+            .site-header_logo-mobile{
+                display: block;
+                >img{
+                    height: 30px;
+                }
+            }
             .btn-menu {
                 .btn-menu_icon {
                     font-size: 2em;
                     color: #848484;
-                    padding: 20px;
+                    padding: 20px 0 20px 20px
                 }
             }
+
         }
+
 
         .header-top-left {
             display: none;

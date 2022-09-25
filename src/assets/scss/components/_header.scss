@@ -6,6 +6,9 @@
         display: flex;
         align-items: center;
         font-weight: 400;
+        .site-header_logo-mobile{
+            display: none;
+        }
 
         .header-top_tell {
             color: $text-color;
@@ -168,7 +171,7 @@
 
                             .sub-menu-item:hover {
                                 @include backgroundText1($primari-color){
-                                    
+
                                 }
                             }
                         }
