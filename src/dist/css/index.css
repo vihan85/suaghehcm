@@ -211,6 +211,10 @@ html {
     transform: translateY(0%);
   }
 }
+.menu-header-container-overlay {
+  opacity: 0;
+}
+
 .header .header-top {
   height: 36px;
   border-bottom: 1px solid #ebebeb;
@@ -402,6 +406,11 @@ html {
   display: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   max-width: 1900px;
 }
@@ -548,9 +557,6 @@ html {
   color: rgb(242, 209, 45);
 }
 
-.project .project-img {
-  padding-top: 50%;
-}
 .project .project-container {
   position: relative;
   text-align: center;
@@ -586,6 +592,12 @@ html {
   right: 0;
 }
 
+.project-outstanding .project-outstanding_background {
+  background-image: url(/src/assets/img/frzCyq.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: unset;
+}
 .project-outstanding .project-outstanding_wrapper-title {
   color: #fff;
   position: relative;
@@ -600,9 +612,6 @@ html {
 }
 .project-outstanding .project-outstanding_inner {
   padding-bottom: 80px;
-}
-.project-outstanding .project-outstanding_inner .project-outstanding_item {
-  padding-top: 70%;
 }
 .project-outstanding .project-outstanding_inner .project-outstanding_content {
   background-color: rgba(38, 34, 34, 0.5215686275);
@@ -934,6 +943,9 @@ html {
   .wide {
     width: 644px;
   }
+  .header .site-header .site-header-right .site-header-right_logo {
+    display: none;
+  }
   .header .header-top {
     position: fixed;
     background-color: #fff;
@@ -941,6 +953,12 @@ html {
     top: 0;
     justify-content: space-between;
     width: 100%;
+  }
+  .header .header-top .site-header_logo-mobile {
+    display: block;
+  }
+  .header .header-top .site-header_logo-mobile > img {
+    height: 30px;
   }
   .header .header-top .btn-menu .btn-menu_icon {
     font-size: 2em;
@@ -1005,20 +1023,29 @@ html {
     height: 20px;
     overflow: hidden;
   }
+  .btn-menu--acctive .menu-header-container-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(53, 53, 53, 0.2196078431);
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .btn-menu--acctive .site-header .main-navigation {
+    transform: translateX(0);
+  }
   .project .btn-seemore {
     position: unset;
     width: 100%;
   }
-  .m-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .m-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
   .service-item {
     margin: 10px 0;
+  }
+  .project-outstanding .project-outstanding_inner .project-outstanding_content .project-outstanding_text {
+    height: 150px;
   }
 }
 @media only screen and (max-width: 719px) {
@@ -1160,6 +1187,8 @@ html {
     bottom: 0;
     background-color: rgba(53, 53, 53, 0.2196078431);
     z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s;
   }
   .btn-menu--acctive .site-header .main-navigation {
     transform: translateX(0);
