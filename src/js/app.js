@@ -59,19 +59,27 @@ $(document).ready(function () {
 
             $(".menu-header-container-overlay").click(function () {
                 $('.site').removeClass('btn-menu--acctive')
+                $('.sub-menu').removeClass("show")
             })
         }
     })
+
+    //show submennu mobile and tablet
+    $(".menu-item").after().click(function() {
+        $(".sub-menu").removeClass("show")
+        $(this).children(".sub-menu").addClass("show")
+    })
+
     //slick
     $('.slider_full-slick').slick({
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 1,
         adaptiveHeight: true,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 5000,
     });
     $('.slider_full-slick').addClass('acctive')
 

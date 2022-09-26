@@ -141,22 +141,22 @@ img{
 
                 .product_item-wrapper-title {
                     padding: 10px 0;
-                }
-
-                .product_item-wrapper-title {
                     >a {
-                        font-size: 1.6em;
+                        font-size: 2em;
                         text-decoration: none;
                         color: $black-color;
-                        font-weight: 400;
+                        font-weight: 600;
+                        text-transform: uppercase;
                     }
                 }
+
 
                 .product_item-wrapper-title:hover {
                     >a {
                         @include textHover($black-color)
                     }
                 }
+
 
                 .product_item-wrapper-price {
                     padding: 10px 0;
@@ -176,6 +176,13 @@ img{
                         color: $star-yellow;
                     }
                 }
+            }
+            .product_item-wrapper_text{
+                text-align: justify;
+                font-size: 1.6em;
+                line-height: 1.6;
+                margin-top: 10px;
+                color: $text-color;
             }
         }
     }
