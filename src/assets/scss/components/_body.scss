@@ -87,10 +87,14 @@ img{
             position: relative;
 
             .product_item-img {
+                height: 400px;
                 border: 1px solid $boder-color;
                 min-height: 200px;
                 border-radius: 2px;
                 border: 1px solid $boder-color;
+                >img{
+                    object-fit: contain;
+                }
             }
 
             .product_item-discount {
@@ -177,7 +181,7 @@ img{
                     }
                 }
             }
-            .product_item-wrapper_text{
+            p {
                 text-align: justify;
                 font-size: 1.6em;
                 line-height: 1.6;
@@ -190,7 +194,10 @@ img{
 
 .project {
     .project-img {
-
+        height: 300px;
+        >img{
+            object-fit: contain;
+        }
     }
 
     .project-container {
@@ -254,10 +261,6 @@ img{
 
     .project-outstanding_inner {
         padding-bottom: 80px;
-
-        .project-outstanding_item {
-
-        }
 
         .project-outstanding_content {
             background-color: #26222285;
