@@ -5,17 +5,15 @@ $(document).ready(function () {
     function render(element, height, backgroundClip) {
         $(element).each(function (index, value) {
             let url = $(value).attr('data-bg-image');
-            $(value).css({ "background": "url(" + url + ")", "background-size": "cover", "background-repeat": "no-repeat", "background-position": "center", "background-clip": backgroundClip, "padding-top": height });
+            $(value).children("img").attr('src',url)
         });
         $(".slider_full").attr('data-active', 1);
         $(".slider_full").attr('data-speed', 2000);
     };
 
-    render('.slider_fill-img', "33.333%");
-    render('.product_item-img', 0, "content-box");
+    render('.product_item-img',);
     render('.project-img');
-    render('.project-outstanding_item');
-    render('.project-outstanding_background');
+    render('.project-outstanding_item')
 
     function slider() {
         $('.slider_full .slider_fill-img:gt(0)').hide();
@@ -61,19 +59,27 @@ $(document).ready(function () {
 
             $(".menu-header-container-overlay").click(function () {
                 $('.site').removeClass('btn-menu--acctive')
+                $('.sub-menu').removeClass("show")
             })
         }
     })
+
+    //show submennu mobile and tablet
+    $(".menu-item").after().click(function() {
+        $(".sub-menu").removeClass("show")
+        $(this).children(".sub-menu").addClass("show")
+    })
+
     //slick
     $('.slider_full-slick').slick({
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 1,
         adaptiveHeight: true,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 5000,
     });
     $('.slider_full-slick').addClass('acctive')
 

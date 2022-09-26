@@ -1,3 +1,6 @@
+.menu-header-container-overlay{
+    opacity: 0;
+}
 .header {
 
     .header-top {
@@ -90,12 +93,11 @@
             height: inherit;
 
             .site-header-right_logo {
-                padding-top: 50%;
-                background-image: url(/src/assets/img/SofaLogo2\ \(1\).png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
                 cursor: pointer;
+                height: 100px;
+                >img{
+                    object-fit: contain;
+                }
             }
         }
 
@@ -120,7 +122,12 @@
                     align-items: center;
                     justify-content: space-around;
                     list-style-type: none;
-
+                    .menu-item_icon-down:after{
+                        font-family: "FontAwesome";
+                        content: '\f107';
+                        padding: 10px;
+                        font-size: 1.6em;
+                    }
                     .menu-item {
                         position: relative;
                         height: inherit;
@@ -134,6 +141,10 @@
                             text-transform: uppercase;
                             font-weight: 600;
                         }
+                        >i{
+                            padding: 5px;
+                            font-size: 1.6em;
+                        }
 
                         .sub-menu {
                             list-style-type: none;
@@ -146,9 +157,10 @@
                             line-height: 0;
                             box-shadow: 4px 4px 14px #ddd;
 
-                            .sub-menu-item {
+                            .menu-item {
                                 padding: 20px 20px;
                                 border-bottom: 1px solid $boder-color;
+                                line-height: unset;
 
                                 >a {
                                     text-decoration: none;
@@ -158,34 +170,22 @@
                                 }
                             }
 
-                            .sub-menu-item:first-child {
+                            .menu-item:first-child {
 
                                 border-radius: 2px 2px 0 0;
                             }
 
-                            .sub-menu-item:last-child {
+                            .menu-item:last-child {
                                 border-bottom: none;
                                 border-radius: 0 0 2px 2px;
 
                             }
 
-                            .sub-menu-item:hover {
+                            .menu-item:hover {
                                 @include backgroundText1($primari-color){
 
                                 }
                             }
-                        }
-                    }
-
-                    .menu-item:hover {
-                        >a {
-                            @include textHover($black-color);
-                        }
-
-                        .sub-menu {
-                            display: block;
-                            animation: scale 0.6s ease;
-                            transform-origin: center top;
                         }
                     }
 
