@@ -26,7 +26,6 @@ img{
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
             background-clip: content-box; // css cho khoảng nên của element
 
             >i {
@@ -80,8 +79,16 @@ img{
 .products {
     .products_wrapper {
         margin: 20px 0;
-        overflow: hidden;
         flex-wrap: nowrap;
+        .slick-next:before,
+        .slick-prev:before{
+            color: $primari-color;
+            font-size: 40px;
+            opacity: 0.5;
+        }
+        .slick-next{
+            right: -4px
+        }
 
         .product_item {
             position: relative;
@@ -240,7 +247,7 @@ img{
 
 .project-outstanding {
     .project-outstanding_background{
-        background-image: url(/src/assets/img/frzCyq.jpg);
+        background-image: url(/./src/assets/img/background-light.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: unset;
@@ -297,6 +304,12 @@ img{
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 6;
                 text-align: justify;
+            }
+        }
+        .project-outstanding_item{
+            height: 400px;
+            >img{
+                object-fit: cover;
             }
         }
     }

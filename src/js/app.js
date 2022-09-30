@@ -37,11 +37,11 @@ $(document).ready(function () {
     })
 
     //show submennu mobile and tablet
-    $(".menu-item").after().click(function() {
-        $(".sub-menu").removeClass("show")
-        $(this).children(".sub-menu").addClass("show")
-
-    })
+    $(".menu-item_icon-down").click(function() {
+        $(this).parent().children(".sub-menu").toggleClass("show")
+        $(this).toggleClass('menu-item_icon-up')
+        $(this).toggleClass('menu-item_icon-down')
+    });
 
     //slick
     $('.slider_full-slick').slick({
@@ -56,5 +56,32 @@ $(document).ready(function () {
     });
     $('.slider_full-slick').addClass('acctive')
 
+    //slick products_wrapper
+    $('.products_wrapper').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        speed: 300,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            }
+
+        ]
+    })
 });
 

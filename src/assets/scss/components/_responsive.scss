@@ -38,6 +38,7 @@ $phone: 320px; // Phone screen size.
                     .nav-menu {
                         .menu-item {
                             &:hover {
+                               
                                     >a {
                                         @include textHover($black-color);
                                     }
@@ -48,6 +49,14 @@ $phone: 320px; // Phone screen size.
                                         transform-origin: center top;
                                     }
                                 }
+                        }
+                        .menu-item_icon-down:after{
+                            color: $black-color;
+                            padding: 0;
+                        }
+                        .menu-item_icon-up:after {
+                            color: $black-color;
+                            padding: 0;
                         }
                     }
                 }
@@ -224,6 +233,9 @@ $phone: 320px; // Phone screen size.
                                     }
 
                                 }
+                            }
+                            .show{
+                                display: block;
                             }
                         }
                     }
@@ -438,7 +450,6 @@ $phone: 320px; // Phone screen size.
 
                             .sub-menu {
                                 list-style-type: none;
-                                display: none;
                                 border-radius: 3px;
                                 position: unset;
                                 background: #3c3c3c00;
@@ -459,6 +470,9 @@ $phone: 320px; // Phone screen size.
                                         margin-left: 20px;
                                     }
                                 }
+                            }
+                            .show{
+                                display: block;
                             }
                         }
                     }

@@ -1,0 +1,126 @@
+
+    .content-container_banner{
+        justify-content: center;
+        >img{
+            width: 100%;
+        }
+    }
+.content-container{
+    .content-container_wrap{
+        min-height: 500px;
+    }
+    .content-container_wrap-contact{
+        background-image: url(https://kimfurniture.com/wp-content/uploads/2021/06/13.png);
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        &::after {
+            background-color: rgba(10,0,1,0.9);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            display: block;
+            z-index: 0;
+            content: "";
+        }
+        .content-container_wrap-contact-body{
+            >p{
+                color: $white-color;
+                margin: 20px 0;
+                text-align: center;
+                font-size: 1.6em;
+            }
+
+        }
+        .content-container_wrap-contact-header{
+            margin-bottom: 50px;
+            text-align: center;
+            .wrap-contact_title{
+                color: $primari-color;
+                font-size: 5em;
+            }
+            .wrap-contact_text{
+                color: $white-color;
+                font-size: 1.2em;
+                margin-top: 5px;
+            }
+
+        }
+        .content-container_wrap-contact--show{
+            position: relative;
+            z-index: 1;
+        }
+        .content-container_wrap-contact-social{
+            color: $primari-color;
+            margin-top: 10px;
+            >i{
+                font-size: 4em;
+                margin: 0 20px;
+            }
+        }
+    }
+    .content-container_wrap-info{
+        padding: 30px;
+        background-color: $primari-color;
+        min-height: 450px;
+
+        .form-1{
+            .heading{
+                font-weight: 400;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 10px;
+                color: white;
+                text-transform: uppercase;
+            }
+            .desc{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 1.5em;
+                color: white;
+
+            }
+            .form-group-1{
+                >label{
+                    display: block;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    font-size: 1.6em;
+                    font-weight: 600
+                }
+                >input{
+                    height: 40px;
+                    width: 100%;
+                    font-size: 1.6em;
+                    box-shadow: 4px 4px 12px gray;
+                    outline: none;
+                    border: 1px solid $boder-color;
+                    padding-left: 10px;
+                    border-radius: 10px
+                }
+
+            }
+            .btn{
+                margin-top: 20px;
+                background-color: rgb(2 2 2 / 74%);
+                margin-left: auto;
+                display: block;
+                border-radius: 30px;
+                color: $white-color;
+                box-shadow: 1px 1px 4px grey;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    iframe{
+        width: 100%;
+    }
+}
