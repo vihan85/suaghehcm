@@ -1,7 +1,7 @@
 .single {
     .post {
-        >header {
-            >h1 {
+        header {
+            h1 {
                 text-transform: uppercase;
                 font-size: 3em;
                 text-align: center;
@@ -9,24 +9,24 @@
 
             }
 
-            >div {
+            div {
                 text-align: center;
 
-                >span {
+                span {
                     margin: 0 2px;
                     display: inline-block;
                     font-size: 1.2em;
                     text-decoration: none;
                     color: $text-color;
 
-                    >span {
-                        >a {
+                    span {
+                        a {
                             text-decoration: none;
                             color: $text-color;
                         }
                     }
 
-                    >a {
+                    a {
                         text-decoration: none;
                         color: $text-color;
                     }
@@ -44,11 +44,11 @@
         }
 
         .entry-content {
-            >blockquote {
+            blockquote {
                 border-left: 2px solid black;
                 margin: 20px 0;
 
-                >p {
+                p {
                     margin-left: 20px;
                     font-size: 1.6em;
                     line-height: 1.6;
@@ -57,13 +57,13 @@
                 }
             }
 
-            >h2 {
+            h2 {
                 font-size: 2em;
                 text-transform: uppercase;
                 margin: 20px 0;
             }
 
-            >p {
+            p {
                 font-size: 1.6em;
                 line-height: 1.6;
                 text-align: justify;
@@ -72,28 +72,31 @@
                 margin-top: 10px;
                 margin-left: 20px;
 
-                >a {
+                a {
                     text-decoration: none;
                     color: $primari-color;
                 }
             }
 
-            >ul {
+            ul {
                 margin-left: 50px;
 
-                >li {
+                li {
 
                     font-size: 1.6em;
                     line-height: 1.6;
 
-                    >h4 {
+                    h4 {
                         font-weight: 400;
                         color: $text-color;
 
                     }
 
                     figure {
-
+                        width: 60% !important;
+                        @include responsive(phone) {
+                            width: 100% !important;
+                        }
                         figcaption {
                             text-align: center;
                             font-size: 0.9em;
@@ -106,31 +109,34 @@
 
             }
 
-            >figure {
+            figure {
                 margin-top: 50px;
                 margin-left: auto;
                 margin-right: auto;
                 background-color: #85d3d373;
                 display: block;
-                width: 100%;
+                width: 60% !important;
+                @include responsive(phone) {
+                    width: 100% !important;
+                }
 
-                >figcaption {
+                figcaption {
                     text-align: center;
                     font-size: 1.3em;
                     padding: 10px;
                     font-style: italic;
                     font-weight: 600;
-                    >a{
+                    a{
                         text-decoration: none;
                         color: rgb(209, 42, 42);
                     }
                 }
             }
         }
-        >footer{
+        footer{
             text-align: end;
             color: $text-color;
-            >a{
+            a{
 
             }
         }
@@ -140,14 +146,14 @@
         .proceduce_title {
             text-align: center;
 
-            >p {
+            p {
                 padding: 20px;
                 font-size: 3em;
                 text-transform: uppercase;
                 font-weight: 600;
             }
 
-            >span {
+            span {
                 font-size: 2em;
                 display: block;
                 margin-bottom: 20px;
@@ -163,13 +169,13 @@
                 height: 250px;
                 margin: 20px;
 
-                >img {
+                img {
                     object-fit: contain;
                 }
             }
 
             .proceduce_item-content {
-                >p {
+                p {
                     padding: 20px 0 10px 0;
                     text-align: center;
                     font-size: 2em;
@@ -177,7 +183,7 @@
                     font-weight: 600;
                 }
 
-                >span {
+                span {
                     font-size: 1.6em;
                     line-height: 1.6;
                     color: gray;
@@ -185,7 +191,7 @@
                     display: block;
                     text-align: justify;
 
-                    >a {
+                    a {
                         text-decoration: none;
                         color: $primari-color;
                         font-size: 1.5em;

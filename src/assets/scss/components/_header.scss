@@ -84,7 +84,6 @@
         min-height: $headerHeight;
         right: 0;
         min-height: 100px;
-        border-bottom: 1px solid #ebebeb;
         left: 0;
         transition: top .3s;
 
@@ -314,7 +313,7 @@
         .header-top {
             .site-header_logo-mobile{
                 display: block;
-                >img{
+                img{
                     height: 30px;
                 }
             }

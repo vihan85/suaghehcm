@@ -10,6 +10,10 @@ html {
     font-family: 'Roboto', Times, serif, sans-serif;
 }
 
+img {
+    object-fit: cover;
+}
+
 .space-top {
     margin-top: 80px;
 }
@@ -64,17 +68,6 @@ html {
 
 .line-height {
     line-height: 1.6;
-}
-
-.spacer {
-    padding-top: 50px;
-
-    .spacer_inner {
-        height: 50px;
-        width: 1px;
-        background-color: white;
-        margin: 0 auto
-    }
 }
 
 .max-width {
