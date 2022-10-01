@@ -66,10 +66,13 @@
             list-style-type: none;
 
             >li {
-                text-transform: uppercase;
-                align-items: center;
                 padding: 10px 0;
-                color: $text-color;
+                >a{
+                    text-transform: uppercase;
+                    align-items: center;
+                    color: $text-color;
+                    text-decoration: none;
+                }
 
                 &:hover {
                     cursor: pointer;

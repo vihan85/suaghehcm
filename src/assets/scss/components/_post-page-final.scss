@@ -68,7 +68,7 @@
                 font-size: 1.6em;
                 line-height: 1.6;
                 text-align: justify;
-                color: #9b9b9b;
+                color: $text-color;
                 margin-bottom: 5px;
                 margin-top: 10px;
                 margin-left: 20px;
@@ -89,6 +89,7 @@
 
                     >h4 {
                         font-weight: 400;
+                        color: $text-color;
 
                     }
 
@@ -96,7 +97,7 @@
                         margin-top: 50px;
                         margin-left: auto;
                         margin-right: auto;
-                        background-color: $primari-color;
+                        background-color: #85d3d373;
                         display: block;
                         width: 100%;
                         >img{
@@ -119,7 +120,7 @@
                 margin-top: 50px;
                 margin-left: auto;
                 margin-right: auto;
-                background-color: $primari-color;
+                background-color: #85d3d373;
                 display: block;
                 width: 100%;
                 >img{
@@ -143,6 +144,67 @@
             text-align: end;
             color: $text-color;
             >a{
+
+            }
+        }
+
+    }
+    .proceduce {
+        .proceduce_title {
+            text-align: center;
+
+            >p {
+                padding: 20px;
+                font-size: 3em;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            >span {
+                font-size: 2em;
+                display: block;
+                margin-bottom: 20px;
+                color: $text-color;
+            }
+        }
+
+
+    }
+    .proceduce_container {
+        .proceduce_item {
+            .proceduce_item-img {
+                height: 250px;
+                margin: 20px;
+
+                >img {
+                    object-fit: contain;
+                }
+            }
+
+            .proceduce_item-content {
+                >p {
+                    padding: 20px 0 10px 0;
+                    text-align: center;
+                    font-size: 2em;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+
+                >span {
+                    font-size: 1.6em;
+                    line-height: 1.6;
+                    color: gray;
+                    text-align: justify;
+                    display: block;
+                    text-align: justify;
+
+                    >a {
+                        text-decoration: none;
+                        color: $primari-color;
+                        font-size: 1.5em;
+                        font-weight: 600;
+                    }
+                }
 
             }
         }
