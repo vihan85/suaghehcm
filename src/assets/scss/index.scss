@@ -1,10 +1,13 @@
+// Core
 @import 'components/_variables.scss';
 @import 'components/_function.scss';
+@import 'components/_responsive.scss';
 @import 'components/_base.scss';
+
+// Components
 @import 'components/_header.scss';
 @import 'components/_body.scss';
-@import 'components/footer.scss';
+@import 'components/_footer.scss';
 @import 'components/_contact-page.scss';
-@import 'components/_responsive.scss';
 @import 'components/_post-page-final.scss';
-
+@import 'components/_slick-slider';

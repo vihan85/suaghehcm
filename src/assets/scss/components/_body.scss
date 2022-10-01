@@ -68,27 +68,11 @@ img{
     }
 }
 
-.slider_full-slick {
-    .slider_full-slick-img {
-        >img {
-            width: 100%;
-        }
-    }
-}
 
 .products {
     .products_wrapper {
         margin: 20px 0;
         flex-wrap: nowrap;
-        .slick-next:before,
-        .slick-prev:before{
-            color: $primari-color;
-            font-size: 40px;
-            opacity: 0.5;
-        }
-        .slick-next{
-            right: -4px
-        }
 
         .product_item {
             position: relative;
