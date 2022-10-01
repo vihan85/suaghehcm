@@ -122,7 +122,7 @@
                     align-items: center;
                     justify-content: space-around;
                     list-style-type: none;
-                    .menu-item_icon-down:after{
+                    .menu-item-has-children::after{
                         font-family: "FontAwesome";
                         content: '\f107';
                         padding: 20px 20px 20px 10px;
