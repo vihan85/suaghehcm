@@ -1,9 +1,9 @@
 // Plugin
-@import './fontawesome-all.scss';
+@import './plugins/fontawesome-all.scss';
 @import '../plugin/slick/slick.scss';
 @import '../plugin/slick/slick-theme.scss';
 
-@import './normalize';
+@import './plugins/normalize.scss';
 
 // Core
 @import 'components/_variables.scss';
