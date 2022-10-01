@@ -83,6 +83,11 @@
             .slider_full-slick-img {
                 overflow: hidden;
                 height: auto;
+
+                img {
+                    height: 200px;
+                    object-fit: cover;
+                }
             }
 
             .slider_full-slick-content {

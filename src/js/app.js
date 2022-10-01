@@ -37,10 +37,8 @@ $(document).ready(function () {
     })
 
     //show submennu mobile and tablet
-    $(".menu-item_icon-down").click(function() {
-        $(this).parent().children(".sub-menu").toggleClass("show")
-        $(this).toggleClass('menu-item_icon-up')
-        $(this).toggleClass('menu-item_icon-down')
+    $(".menu-item-has-children").after().click(function() {
+        $(this).toggleClass("active");
     });
 
     //slick

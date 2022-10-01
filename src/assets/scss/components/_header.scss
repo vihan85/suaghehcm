@@ -2,6 +2,10 @@
     opacity: 0;
 }
 .header {
+    .btn-menu {
+        display: none;
+    }
+
     .header-top {
         height: 36px;
         border-bottom: 1px solid $boder-color;
@@ -102,11 +106,6 @@
 
         .main-navigation {
             height: inherit;
-
-            .btn-menu {
-                display: none;
-            }
-
             .main-nav_icon-list {
 
                 display: none;
@@ -121,22 +120,42 @@
                     align-items: center;
                     justify-content: space-around;
                     list-style-type: none;
-                    .menu-item-has-children::after{
-                        font-family: "FontAwesome";
-                        content: '\f107';
-                        padding: 20px 20px 20px 10px;
-                        font-size: 1.6em;
+                    .menu-item-has-children{
+                        &::after{
+                            font-family: "FontAwesome";
+                            content: '\f107';
+                            padding: 10px 5px;
+                            font-size: 1.6em;
+                            @include responsive(phone) {
+                                color: $white-color;
+                                position: absolute;
+                                padding: 0 10px;
+                                right: 0;
+                                top: 0
+                            }
+                        }
+                        &.active {
+                            &::after{
+                                content: '\f106';
+                            }
+                            .sub-menu {
+                                display: block;
+                            }
+                        }
                     }
+                    
                     .menu-item_icon-up:after {
                         font-family: "FontAwesome";
                         content: '\f106';
-                        padding: 20px 20px 20px 10px;
+                        padding: 20px 10px 20px 10px;
                         font-size: 1.6em;
                         color: $white-color;
                     }
+                    
                     .menu-item {
                         position: relative;
                         height: inherit;
+                        padding-right: 10px;
                         line-height: $headerHeight;
                         cursor: pointer;
 
@@ -310,7 +329,7 @@
                 .btn-menu_icon {
                     font-size: 2em;
                     color: #848484;
-                    padding: 20px;
+                    padding: 0 10px 0;
                 }
             }
         }
@@ -389,16 +408,6 @@
             }
         }
     }
-    .product_item-wrapper-title {
-        >a {
-            display: block;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
-            height: 20px;
-            overflow: hidden;
-        }
-    }
 
     .project {
         .btn-seemore {
@@ -465,27 +474,23 @@
     }
 }
 
-
 @include responsive(phone) {
     .header {
         .site-header {
             .site-header_container {
                 flex-direction: column;
             }
-
             .main-navigation {
                 .menu-header-container {
                     .nav-menu {
                         flex-direction: column;
                         align-items: flex-start;
-
                         .menu-item {
                             line-height: 50px;
                         }
                     }
                 }
             }
-
         }
     }
 }
