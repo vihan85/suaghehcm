@@ -1,5 +1,6 @@
-module.exports = function (grunt) {
+const sass = require('node-sass');
 
+module.exports = function (grunt) {
     // Project configuration.
     grunt.initConfig({
         concat: {
@@ -13,23 +14,42 @@ module.exports = function (grunt) {
                 "dest": "./src/dist/js/script.js"
             }
         },
+        watch: {
+            src: {
+                files: [
+                    './src/assets/**/*.js',
+                    './src/assets/**/*.scss'
+                ],
+                tasks: ['default'],
+              },
+        },
         uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
-            },
             dist: {
+                // Build file for wordpress
                 files: {
-                    'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+                    '../suaghehcm_wp/wp-content/themes/underscores-child/assets/dist/js/script.min.js': ['<%= concat.build.dest %>'],
                 }
             }
         },
+        sass: {
+            dist: {
+                options: {
+                    style: 'expanded'
+                },
+                files: {
+                    './src/dist/css/index.css': './src/assets/scss/index.scss',
+                    '../suaghehcm_wp/wp-content/themes/underscores-child/assets/dist/css/index.min.css': './src/assets/scss/index.scss'
+                }
+            }
+        }
     });
 
     // Load required modules
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-
-
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     // Task definitions
-    grunt.registerTask('default', ['concat', 'uglify']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass']);
+    grunt.registerTask('grunt-watch', ['watch']);
 };

@@ -289,6 +289,9 @@ img{
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 6;
                 text-align: justify;
+                @include responsive(phone) {
+                    height: 140px;
+                }
             }
         }
         .project-outstanding_item{

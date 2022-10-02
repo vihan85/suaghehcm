@@ -6,6 +6,12 @@
         display: none;
     }
 
+    .main-header {
+        @include responsive(phone) {
+            display: none;
+        }
+    }
+
     .header-top {
         height: 36px;
         border-bottom: 1px solid $boder-color;
@@ -93,14 +99,6 @@
 
         .site-header-right {
             height: inherit;
-
-            .site-header-right_logo {
-                cursor: pointer;
-                height: 100px;
-                >img{
-                    object-fit: contain;
-                }
-            }
         }
 
         .main-navigation {
@@ -133,12 +131,14 @@
                                 top: 0
                             }
                         }
-                        &.active {
-                            &::after{
-                                content: '\f106';
-                            }
-                            .sub-menu {
-                                display: block;
+                        @include responsive(phone){
+                            &.active {
+                                &::after{
+                                    content: '\f106';
+                                }
+                                .sub-menu {
+                                    display: block;
+                                }
                             }
                         }
                     }
@@ -156,7 +156,6 @@
                         height: inherit;
                         padding-right: 10px;
                         line-height: $headerHeight;
-                        cursor: pointer;
 
                         >a {
                             text-decoration: none;
@@ -244,6 +243,14 @@
         }
 
     }
+
+    .site-header-right_logo {
+        cursor: pointer;
+        height: 100px;
+        img{
+            object-fit: contain;
+        }
+    }
 }
 
 @include responsive(pc) {
@@ -313,8 +320,10 @@
         .header-top {
             .site-header_logo-mobile{
                 display: block;
+                height: 30px;
                 img{
                     height: 30px;
+                    object-fit: contain;
                 }
             }
             position: fixed;
@@ -399,6 +408,10 @@
 
                 .site-header-right_logo {
                     margin-top: 40px;
+
+                    img {
+                        object-fit: contain;
+                    }
                 }
             }
 

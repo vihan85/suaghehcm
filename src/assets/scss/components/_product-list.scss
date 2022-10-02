@@ -1,0 +1,66 @@
+.archive.category {
+    p {
+        font-size: 1.6em;
+        line-height: 1.6;
+        text-align: justify;
+        color: #9b9b9b;
+    }
+    span {
+        font-size: 1.2em;
+        line-height: 1.6;
+        text-align: justify;
+        color: #9b9b9b;
+    }
+    .page-header {
+        h1 {
+            color: $primari-color;
+            text-align: center;
+            font-size: 50px;
+            display: none;
+        }
+    }
+    .entry-title {
+        border: none;
+    }
+    article {
+        border-top: 1px solid $primari-color;
+        margin: 20px 0;
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+            padding: 20px 0;
+
+            a {
+                color: $primari-color;
+            }
+        }
+        h3, h4, h5 {
+            font-size: 1.6em;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+        .entry-meta {
+            text-align: right;
+            padding: 10px;
+        }
+        .post-thumbnail, figure {
+            display: block;
+            width: 70%;
+            margin: auto;
+            @include responsive(phone) {
+                width: 100%;
+            }
+        }
+        img {
+            height: 500px;
+        }
+        figcaption {
+            text-align: center;
+            font-size: 1.3em;
+            padding: 10px;
+            font-style: italic;
+            font-weight: 600;
+        }
+    }
+}

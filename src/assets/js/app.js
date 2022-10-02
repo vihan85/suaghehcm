@@ -60,7 +60,8 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 300,
-        arrows: true,
+        arrows: false,
+        dots: true,
         responsive: [
             {
                 breakpoint: 769,
