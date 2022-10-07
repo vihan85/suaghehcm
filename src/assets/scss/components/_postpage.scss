@@ -1,74 +1,184 @@
-.post-container {
-    margin-top: 20px;
+.single {
+    .post {
+        header {
+            h1 {
+                text-transform: uppercase;
+                font-size: 3em;
+                text-align: center;
+                color: $primari-color;
 
-    .post-container_title {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.6em;
-        margin-bottom: 20px;
+            }
 
-        >h1 {
-            margin-top: 0;
-        }
-    }
+            div {
+                text-align: center;
 
-    .post-container_post {
-        .post-container_post-title {
-            font-size: 2em;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
+                span {
+                    margin: 0 2px;
+                    display: inline-block;
+                    font-size: 1.2em;
+                    text-decoration: none;
+                    color: $text-color;
 
-        .post-container_post-text {
-            font-size: 1.6em;
-            line-height: 1.6;
-            color: $text-color;
-            margin-bottom: 15px;
-            text-align: justify;
-        }
+                    span {
+                        a {
+                            text-decoration: none;
+                            color: $text-color;
+                        }
+                    }
 
-        .post-container_img {
-            height: 400px;
-
-            >img {
-                object-fit: contain;
+                    a {
+                        text-decoration: none;
+                        color: $text-color;
+                    }
+                }
             }
         }
-    }
-}
 
-.proceduce {
-    .proceduce_title {
-        text-align: center;
-
-        >p {
-            padding: 20px;
-            font-size: 3em;
-            text-transform: uppercase;
-            font-weight: 600;
+        .post-thumbnail {
+            margin-top: 50px;
         }
 
-        >span {
-            font-size: 2em;
-            display: block;
-            margin-bottom: 20px;
+        img {
+            object-fit: cover;
+            height: 300px;
+        }
+
+        .entry-content {
+            blockquote {
+                border-left: 2px solid black;
+                margin: 20px 0;
+
+                p {
+                    margin-left: 20px;
+                    font-size: 1.6em;
+                    line-height: 1.6;
+                    color: $text-color;
+                    text-align: justify;
+                }
+            }
+
+            h2 {
+                font-size: 2em;
+                text-transform: uppercase;
+                margin: 20px 0;
+            }
+
+            p {
+                font-size: 1.6em;
+                line-height: 1.6;
+                text-align: justify;
+                color: $text-color;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                margin-left: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $primari-color;
+                }
+            }
+
+            ul {
+                margin-left: 50px;
+
+                li {
+
+                    font-size: 1.6em;
+                    line-height: 1.6;
+
+                    h4 {
+                        font-weight: 400;
+                        color: $text-color;
+
+                    }
+
+                    figure {
+                        width: 60% !important;
+                        @include responsive(phone) {
+                            width: 100% !important;
+                        }
+                        figcaption {
+                            text-align: center;
+                            font-size: 0.9em;
+                            padding-bottom: 5px;
+                            font-style: italic;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+            }
+
+            figure {
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #85d3d373;
+                display: block;
+                width: 60% !important;
+                @include responsive(phone) {
+                    width: 100% !important;
+                }
+
+                figcaption {
+                    text-align: center;
+                    font-size: 1.3em;
+                    padding: 10px;
+                    font-style: italic;
+                    font-weight: 600;
+                    a{
+                        text-decoration: none;
+                        color: rgb(209, 42, 42);
+                    }
+                }
+            }
+        }
+        footer{
+            text-align: end;
             color: $text-color;
-        }
-    }
+            a{
 
+            }
+        }
+
+    }
+    .proceduce {
+        border-top: 2px solid $primari-color;
+        margin: 50px 0;
+
+        .proceduce_title {
+            text-align: center;
+
+            p {
+                padding: 20px;
+                font-size: 3em;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            span {
+                font-size: 2em;
+                display: block;
+                margin-bottom: 20px;
+                color: $text-color;
+            }
+        }
+
+
+    }
     .proceduce_container {
         .proceduce_item {
             .proceduce_item-img {
                 height: 250px;
                 margin: 20px;
 
-                >img {
+                img {
                     object-fit: contain;
                 }
             }
 
             .proceduce_item-content {
-                >p {
+                p {
                     padding: 20px 0 10px 0;
                     text-align: center;
                     font-size: 2em;
@@ -76,7 +186,7 @@
                     font-weight: 600;
                 }
 
-                >span {
+                span {
                     font-size: 1.6em;
                     line-height: 1.6;
                     color: gray;
@@ -84,7 +194,7 @@
                     display: block;
                     text-align: justify;
 
-                    >a {
+                    a {
                         text-decoration: none;
                         color: $primari-color;
                         font-size: 1.5em;
