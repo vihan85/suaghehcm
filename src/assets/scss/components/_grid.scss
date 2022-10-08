@@ -104,10 +104,6 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-
-    .wide {
-        width: 644px;
-    }
 }
 
 @include responsive(phone) {
@@ -156,4 +152,7 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+
+
 }

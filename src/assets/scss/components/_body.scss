@@ -324,7 +324,7 @@ img{
 }
 
 @include responsive(phone) {
-    .product_item-wrapper { 
+    .product_item-wrapper {
         .product_item-wrapper-title {
             >a {
                 display: block;

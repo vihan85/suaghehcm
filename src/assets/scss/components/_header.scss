@@ -6,12 +6,6 @@
         display: none;
     }
 
-    .main-header {
-        @include responsive(phone) {
-            display: none;
-        }
-    }
-
     .header-top {
         height: 36px;
         border-bottom: 1px solid $boder-color;
@@ -142,7 +136,7 @@
                             }
                         }
                     }
-                    
+
                     .menu-item_icon-up:after {
                         font-family: "FontAwesome";
                         content: '\f106';
@@ -150,7 +144,7 @@
                         font-size: 1.6em;
                         color: $white-color;
                     }
-                    
+
                     .menu-item {
                         position: relative;
                         height: inherit;
@@ -262,7 +256,7 @@
                     .nav-menu {
                         .menu-item {
                             &:hover {
-                               
+
                                     >a {
                                         @include textHover($black-color);
                                     }
@@ -301,7 +295,7 @@
             box-shadow: 1px 1px 2px #fff0f0;
         }
 
-        .site-main {
+        .slider_full-slick {
             margin-top: 100px;
         }
     }
@@ -365,6 +359,7 @@
                 transform: translateX(calc(100% + 1px));
                 transition: transform 1s;
                 background: $mobile-menu-color;
+                width: 80vw;
 
                 .menu-header-container {
                     .nav-menu {

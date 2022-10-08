@@ -13,7 +13,7 @@ $(document).ready(function () {
             $(".main-header").attr('style', 'top: -' + heightMenu + 'px !important');
         }
 
-        if (scroll < 36) {
+        if (scroll < heightMenu) {
             $('.site').removeClass("scroll-menu")
         };
     });

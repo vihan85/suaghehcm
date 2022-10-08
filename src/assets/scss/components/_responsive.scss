@@ -1,16 +1,16 @@
 @use "sass:string";
 $pc: 1024px; // PC screen size.
-$tablet: 720px; // Tablet screen size.
+$tablet: 768px; // Tablet screen size.
 $phone: 320px; // Phone screen size.
 
 @mixin responsive($media) {
     @if $media == pc {
-        @media only screen and (min-width: $pc + 1) and (min-width: $pc) {
+        @media only screen and (min-width: $pc + 1) {
             @content;
         }
     }
-    @else if $media == phone {
-        @media only screen and (max-width: $tablet - 1) {
+    @else if $media == pc_tablet {
+        @media only screen and (min-width: $tablet - 1) {
             @content;
         }
     }
@@ -19,8 +19,8 @@ $phone: 320px; // Phone screen size.
             @content;
         }
     }
-    @else if $media == pc_tablet {
-        @media only screen and (min-width: $tablet - 1) {
+    @else if $media == phone {
+        @media only screen and (max-width: $tablet) {
             @content;
         }
     }
