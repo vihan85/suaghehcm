@@ -33,6 +33,7 @@ img{
                 text-align: center;
                 font-size: 3em;
                 align-self: 25%;
+                padding: 0 10px;
             }
 
             .service-item_content {
@@ -68,27 +69,11 @@ img{
     }
 }
 
-.slider_full-slick {
-    .slider_full-slick-img {
-        >img {
-            width: 100%;
-        }
-    }
-}
 
 .products {
     .products_wrapper {
         margin: 20px 0;
         flex-wrap: nowrap;
-        .slick-next:before,
-        .slick-prev:before{
-            color: $primari-color;
-            font-size: 40px;
-            opacity: 0.5;
-        }
-        .slick-next{
-            right: -4px
-        }
 
         .product_item {
             position: relative;
@@ -101,6 +86,10 @@ img{
                 border: 1px solid $boder-color;
                 >img{
                     object-fit: contain;
+                }
+
+                @include responsive(phone) {
+                    height: 200px;
                 }
             }
 
@@ -239,7 +228,6 @@ img{
     }
 
     .btn-seemore {
-        position: absolute;
         bottom: 0;
         right: 0;
     }
@@ -267,13 +255,10 @@ img{
     }
 
     .project-outstanding_inner {
-        padding-bottom: 80px;
-
         .project-outstanding_content {
             background-color: #26222285;
-            min-height: 250px;
 
-            .project-outstanding_title {
+            h4 {
                 >span {
                     text-transform: uppercase;
                     font-size: 1.6em;
@@ -293,21 +278,28 @@ img{
                 }
             }
 
-            .project-outstanding_text {
+            p {
                 color: $white-color;
                 font-size: 1.6em;
                 padding: 0 20px;
-                height: 170px;
+                height: 105px;
                 overflow: hidden;
                 display: block;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 6;
                 text-align: justify;
+                @include responsive(phone) {
+                    height: 140px;
+                }
             }
         }
         .project-outstanding_item{
             height: 400px;
+
+            @include responsive(phone) {
+                height: 200px;
+            }
             >img{
                 object-fit: cover;
             }
@@ -327,6 +319,26 @@ img{
             color: black;
             font-size: 2em;
             text-transform: uppercase;
+        }
+    }
+}
+
+@include responsive(phone) {
+    .product_item-wrapper {
+        .product_item-wrapper-title {
+            >a {
+                display: block;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                height: 26px;
+                overflow: hidden;
+            }
+        }
+        p {
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            height: 100px;
         }
     }
 }

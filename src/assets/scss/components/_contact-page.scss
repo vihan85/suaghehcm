@@ -7,10 +7,11 @@
     }
 .content-container{
     .content-container_wrap{
+        background-color: $primari-color;
         min-height: 500px;
     }
     .content-container_wrap-contact{
-        background-image: url(https://kimfurniture.com/wp-content/uploads/2021/06/13.png);
+        background-image: url("./img/contact-bg.png");
         position: relative;
         height: 100%;
         display: flex;

@@ -1,7 +1,18 @@
 .footer-container {
+    border-top: 2px solid $primari-color;
     padding: 0 12px;
     min-height: 400px;
     background-color: $white-color;
+    margin-top: 50px;
+
+    .spacer {
+        .spacer_inner {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin: 0 auto
+        }
+    }
 
     .footer-left {
         display: flex;
@@ -115,6 +126,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    margin-top: 20px;
 
     >P {
         padding: 10px;
@@ -122,3 +134,5 @@
         color: $text-color;
     }
 }
+
+@import './social';

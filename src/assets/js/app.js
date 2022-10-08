@@ -13,7 +13,7 @@ $(document).ready(function () {
             $(".main-header").attr('style', 'top: -' + heightMenu + 'px !important');
         }
 
-        if (scroll < heightMenu) {
+        if (scroll < 36) {
             $('.site').removeClass("scroll-menu")
         };
     });
@@ -37,10 +37,8 @@ $(document).ready(function () {
     })
 
     //show submennu mobile and tablet
-    $(".menu-item_icon-down").click(function() {
-        $(this).parent().children(".sub-menu").toggleClass("show")
-        $(this).toggleClass('menu-item_icon-up')
-        $(this).toggleClass('menu-item_icon-down')
+    $(".menu-item-has-children").after().click(function() {
+        $(this).toggleClass("active");
     });
 
     //slick
@@ -62,8 +60,17 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 300,
-        arrows: true,
+        arrows: false,
+        dots: true,
         responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
             {
                 breakpoint: 769,
                 settings: {
