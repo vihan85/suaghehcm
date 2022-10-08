@@ -1,17 +1,20 @@
- 
+// Plugin
+@import './plugins/fontawesome-all.scss';
+@import '../plugin/slick/slick.scss';
+@import '../plugin/slick/slick-theme.scss';
+@import './plugins/normalize.scss';
 
+// Core
 @import 'components/_variables.scss';
-
 @import 'components/_function.scss';
-
-
 @import 'components/_responsive.scss';
+@import 'components/_base.scss';
 
-@import 'components/_base.scss'; 
-
-
-
+// Components
 @import 'components/_header.scss';
-
 @import 'components/_body.scss';
-@import 'components/footer.scss';
+@import 'components/_footer.scss';
+@import 'components/_contact-page.scss';
+@import 'components/_postpage.scss';
+@import 'components/_slick-slider.scss';
+@import 'components/_product-list.scss';

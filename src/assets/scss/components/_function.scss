@@ -5,6 +5,7 @@
         >a {
             color: $white-color
         }
+        color: $white-color;
         @content;
     }
 
