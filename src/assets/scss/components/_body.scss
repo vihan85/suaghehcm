@@ -235,7 +235,7 @@ img{
 
 .project-outstanding {
     .project-outstanding_background{
-        background-image: url(/./src/assets/img/background-light.jpg);
+        background-image: url('./img/background-light.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: unset;
