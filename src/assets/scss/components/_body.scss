@@ -144,7 +144,7 @@ img{
                     >a {
                         font-size: 2em;
                         text-decoration: none;
-                        color: $black-color;
+                        color: $primari-color;
                         font-weight: 600;
                         text-transform: uppercase;
                     }
@@ -206,12 +206,12 @@ img{
 
     .project-title {
         font-size: 4em;
-        font-weight: 400;
+        font-weight: 600;
         text-transform: uppercase;
         margin: 0;
         >a {
             text-decoration: none;
-            color: $black-color;
+            color: $uppcase-color;
 
             &:hover {
                 @include textHover($black-color)
@@ -241,7 +241,7 @@ img{
         background-position: unset;
     }
     .project-outstanding_wrapper-title {
-        color: $white-color;
+        color: $uppcase-color;
         position: relative;
         font-size: 3em;
         text-align: center;
@@ -316,7 +316,7 @@ img{
 
         >a {
             text-decoration: none;
-            color: black;
+            color: $uppcase-color;
             font-size: 2em;
             text-transform: uppercase;
         }
@@ -339,6 +339,77 @@ img{
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 1;
             height: 100px;
+        }
+    }
+}
+.proceduce {
+    .proceduce_title {
+        text-align: center;
+
+        >p {
+            padding: 20px;
+            font-size: 3em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $uppcase-color;
+        }
+
+        >span {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 20px;
+            color: $text-color;
+        }
+    }
+
+
+}
+
+    .proceduce{
+        margin-top: 50px;
+    }
+    .proceduce_title{
+        color: $black-color;
+    }
+
+.proceduce_container {
+    .proceduce_item {
+        .proceduce_item-img {
+            height: 250px;
+            margin: 20px;
+
+            >img {
+                object-fit: contain;
+            }
+        }
+
+        .proceduce_item-content {
+            >p {
+                color: $uppcase-color;
+
+                padding: 20px 0 10px 0;
+                text-align: center;
+                font-size: 2em;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            >span {
+                font-size: 1.6em;
+                line-height: 1.6;
+                color: gray;
+                text-align: justify;
+                display: block;
+                text-align: justify;
+
+                >a {
+                    text-decoration: none;
+                    color: $primari-color;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                }
+            }
+
         }
     }
 }
