@@ -3,7 +3,7 @@
 
     @if ($backgroundcolor == $primari-color) {
         >a {
-            color: $white-color
+            color: $uppcase-color
         }
         color: $white-color;
         @content;
@@ -21,7 +21,7 @@
     color: $primari-color;
   }
   @if($textColor == $primari-color) {
-    color: $white-color;
+    color: $uppcase-color;
   }
   animation: opacity 0.3s linear
  }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600&family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,700&family=Mukta:wght@200;400;500;800&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400&family=Sono:wght@300;400;500;600;700;800&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +7,10 @@
 
 html {
     font-size: 62.5%;
-
-    font-family: 'Roboto', Times, serif, sans-serif;
+    font-family: 'Lato', sans-serif, 'arial';
+}
+body{
+    background-color: #f5f5f5;
 }
 a {
     text-decoration: none;
@@ -54,7 +57,7 @@ img {
     padding: 20px;
     text-align: center;
     color: #fff;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
     border-radius: 30px;

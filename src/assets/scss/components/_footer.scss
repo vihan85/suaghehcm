@@ -2,9 +2,6 @@
     border-top: 2px solid $primari-color;
     padding: 0 12px;
     min-height: 400px;
-    background-color: $white-color;
-    margin-top: 50px;
-
     .spacer {
         .spacer_inner {
             height: 50px;
@@ -21,14 +18,15 @@
         align-items: center;
 
         .footer_slogan {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            text-align: center;
+            color: #004aad;
+            margin-top: 10px;
             >span {
                 color: $primari-color;
                 font-weight: 800;
             }
-
-            font-size: 1.6em;
-            line-height: 1.6;
-            text-align: center;
         }
 
         .footer_logo {
@@ -39,8 +37,6 @@
                 text-decoration: none;
             }
 
-            .footer_logo-img {
-            }
         }
 
     }
@@ -82,8 +78,9 @@
                 >a{
                     text-transform: uppercase;
                     align-items: center;
-                    color: $text-color;
+                    color: $primari-color;
                     text-decoration: none;
+                    font-size: 1.6rem;
                 }
 
                 &:hover {
@@ -92,29 +89,30 @@
             }
         }
 
-        .foorter-contact {
+        .footer-contact {
             display: flex;
+            font-size: 1.6rem;
 
             >p {
                 padding: 0 20px;
                 text-align: left;
-                color: $text-color;
+                color: $primari-color;
             }
-
+            // icon
             >i {
-                font-size: 1.3em;
+               font-size: 2rem;
+                color: $uppcase-color;
             }
         }
 
         .footer_content {
-
-            font-size: 1.6em;
             line-height: 1.6;
             .footer_content-title {
                 text-transform: uppercase;
                 font-weight: 600;
+                color: $uppcase-color;
+                font-size: 2rem;
                 padding: 20px 0;
-                color: $black-color;
 
             }
         }

@@ -2,6 +2,9 @@
     opacity: 0;
 }
 .header {
+    .main-header{
+        background-color: $primari-color;
+    }
     .btn-menu {
         display: none;
     }
@@ -17,7 +20,7 @@
         }
 
         .header-top_tell {
-            color: $text-color;
+            color: $uppcase-color;
             font-size: 1.6em;
             text-decoration: none;
             margin-left: 8px;
@@ -33,7 +36,7 @@
         font-size: 1.5em;
         list-style-type: none;
         display: flex;
-        color: $text-color;
+        color: $uppcase-color;
         margin-left: auto;
         z-index: 1;
         >ul {
@@ -46,7 +49,7 @@
                 margin-left: 36px;
                 cursor: pointer;
                 a {
-                    color: $text-color;
+                    color: $uppcase-color;
                     text-decoration: none;
                 }
                 &.header-top-left_login {
@@ -117,6 +120,7 @@
                             content: '\f107';
                             padding: 10px 5px;
                             font-size: 1.6em;
+                            color: $white-color;
                             @include responsive(phone) {
                                 color: $white-color;
                                 position: absolute;
@@ -141,7 +145,7 @@
                         font-family: "FontAwesome";
                         content: '\f106';
                         padding: 20px 10px 20px 10px;
-                        font-size: 1.6em;
+                        font-size: 2rem;
                         color: $white-color;
                     }
 
@@ -181,7 +185,7 @@
 
                                 >a {
                                     text-decoration: none;
-                                    color: $black-color;
+                                    color: $primari-color;
                                     font-size: 1.6em;
                                     text-transform: uppercase;
                                 }
@@ -198,8 +202,8 @@
 
                             }
                             .menu-item:hover {
-                                @include backgroundText1($primari-color){
-                                }
+                                cursor: pointer;
+                                @include backgroundText1($primari-color)
                             }
                         }
                     }
@@ -261,10 +265,12 @@
                 .menu-header-container {
                     .nav-menu {
                         .menu-item {
+                            >a{color: $white-color;}
                             &:hover {
 
                                     >a {
-                                        @include textHover($black-color);
+                                        
+                                        @include textHover($primari-color);
                                     }
 
                                     .sub-menu {
@@ -299,13 +305,31 @@
             z-index: 3;
             box-shadow: 1px 1px 2px #fff0f0;
         }
+        .menu-item-has-children{
+            &::after{
+                color: white !important;
+            }
+        }
         .menu-item{
+            >a{
+                color: $white-color !important;
+            }
+                
             &:hover{
-                >a{
-                    color: $white-color !important;
-                }
+                
                 .sub-menu{
                     background-color: $primari-color !important;
+                    >a{
+                        color: $uppcase-color ;
+                    }
+                    .menu-item{
+                        &:hover{
+                            background-color: $white-color !important;
+                        }
+                    }
+                }
+                >a{
+                    color: $uppcase-color !important;
                 }
             }
         }
@@ -318,6 +342,7 @@
 
 
 @include responsive(phone) {
+    
     .header {
         .site-header{
             .site-header-right{
@@ -327,16 +352,19 @@
             }
         }
         .header-top {
+            height: calc(($headerHeight / 2) + 2px);
+            border: none;
             .site-header_logo-mobile{
                 display: block;
-                height: 30px;
+                overflow: hidden;
+                border-radius: 50%;
                 img{
-                    height: 30px;
+                    height: calc($headerHeight / 2);
                     object-fit: contain;
                 }
             }
             position: fixed;
-            background-color: $white-color;
+            background-color: $primari-color;
             z-index: 50;
             top: 0;
             justify-content: space-between;
@@ -345,7 +373,7 @@
             .btn-menu {
                 .btn-menu_icon {
                     font-size: 2em;
-                    color: #848484;
+                    color: $white-color;
                     padding: 0 10px 0;
                 }
             }
@@ -368,7 +396,7 @@
                 position: fixed;
                 right: 0;
                 bottom: 0;
-                top: 35px;
+                top:calc(($headerHeight / 2) + 2px);
                 z-index: 100;
                 background: $white-color;
                 transform: translateX(calc(100% + 1px));
@@ -379,13 +407,14 @@
                 .menu-header-container {
                     .nav-menu {
                         display: block;
+                        color: $primari-color;
 
                         .menu-item {
                             line-height: 50px;
                             border-bottom: 1px solid #616161;
                             width: 100%;
                             >a {
-                                color: $white-color;
+                                color: currentColor;
                                 font-weight: 400;
                             }
                             >i{
@@ -398,7 +427,6 @@
                                     border: none;
 
                                     >a {
-                                        color: $white-color;
                                         text-transform: none;
                                         margin-left: 20px;
                                     }
