@@ -8928,7 +8928,7 @@ img {
   position: absolute;
   z-index: 1;
   min-width: 300px;
-  background: white;
+  background-color: white;
   line-height: 0;
   box-shadow: 4px 4px 14px #ddd;
 }
@@ -9076,7 +9076,7 @@ img {
     object-fit: contain;
   }
   .header .header-top .btn-menu .btn-menu_icon {
-    font-size: 2em;
+    font-size: 3rem;
     color: #fff;
     padding: 0 10px 0;
   }
@@ -9098,17 +9098,22 @@ img {
     background: #fff;
     transform: translateX(calc(100% + 1px));
     transition: transform 1s;
-    background: rgba(47, 47, 47, 0.9215686275);
+    background: rgba(255, 255, 255, 0.92);
+    border-left: 1px solid rgba(255, 105, 34, 0.68);
     width: 80vw;
   }
   .header .site-header .main-navigation .menu-header-container .nav-menu {
     display: block;
     color: #FF6922;
   }
+  .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item-has-children::after {
+    color: #FF6922;
+  }
   .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item {
     line-height: 50px;
-    border-bottom: 1px solid #616161;
+    border-bottom: 1px solid rgba(255, 105, 34, 0.68);
     width: 100%;
+    padding-left: 10px;
   }
   .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item > a {
     color: currentColor;
@@ -9117,6 +9122,13 @@ img {
   .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item > i {
     color: #fff;
   }
+}
+@media only screen and (max-width: 768px) and (max-width: 768px) {
+  .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item .sub-menu {
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 768px) {
   .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item .sub-menu .menu-item {
     padding: 0;
     border: none;
@@ -9125,9 +9137,13 @@ img {
     text-transform: none;
     margin-left: 20px;
   }
+}
+@media only screen and (max-width: 768px) {
   .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item .show {
     display: block;
   }
+}
+@media only screen and (max-width: 768px) {
   .header .site-header .site-header-right {
     margin: auto;
   }
@@ -9137,23 +9153,32 @@ img {
   .header .site-header .site-header-right .site-header-right_logo img {
     object-fit: contain;
   }
+}
+@media only screen and (max-width: 768px) {
   .header .site-header .site-header_container {
     display: block;
   }
+}
+@media only screen and (max-width: 768px) {
   .project .btn-seemore {
     position: unset;
     width: 100%;
   }
+}
+@media only screen and (max-width: 768px) {
   .service-item {
     margin: 10px 0;
   }
+}
+@media only screen and (max-width: 768px) {
   .project-outstanding .project-outstanding_inner .project-outstanding_content .project-outstanding_text {
     height: 150px;
   }
+}
+@media only screen and (max-width: 768px) {
   .btn-menu--acctive .header .site-header .main-navigation .menu-header-container .nav-menu .menu-item .sub-menu {
     position: unset;
     line-height: unset;
-    background-color: rgba(56, 56, 56, 0);
     position: unset;
     line-height: unset;
     box-shadow: none;
@@ -9424,6 +9449,14 @@ img {
   border-left-width: 100vw;
   border-bottom: 2vw solid #FF6922;
 }
+@media only screen and (max-width: 768px) {
+  .project-outstanding .project-outstanding_background::after {
+    border-bottom: 10vw solid #FF6922;
+  }
+  .project-outstanding .project-outstanding_background::before {
+    border-top: 10vw solid #FF6922;
+  }
+}
 .project-outstanding .project-outstanding_wrapper-title {
   color: #004AAD;
   position: relative;
@@ -9602,7 +9635,7 @@ img {
 }
 .footer-container .footer-left .footer_slogan > span {
   color: #FF6922;
-  font-weight: 800;
+  font-weight: 600;
 }
 .footer-container .footer-left .footer_logo {
   width: 200px;
@@ -9679,7 +9712,7 @@ img {
 }
 
 .footer-secondary {
-  height: 80px;
+  height: 40pxpx;
   background-color: #FF6922;
   display: flex;
   justify-content: center;
@@ -9689,7 +9722,7 @@ img {
 .footer-secondary > P {
   padding: 10px;
   font-size: 1.3em;
-  color: black;
+  color: #fff;
 }
 
 /*************** ADD CUSTOM CSS HERE.   ***************/
@@ -9926,6 +9959,7 @@ img {
   }
 }
 .content-container_banner {
+  margin-top: 40px;
   justify-content: center;
 }
 .content-container_banner > img {
@@ -9946,6 +9980,9 @@ img {
   justify-content: center;
   padding: 30px;
 }
+.content-container .content-container_wrap-contact > a {
+  color: #FF6922;
+}
 .content-container .content-container_wrap-contact::after {
   background-color: rgba(10, 0, 1, 0.9);
   top: 0;
@@ -9961,7 +9998,10 @@ img {
   color: #fff;
   margin: 20px 0;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 2.5rem;
+}
+.content-container .content-container_wrap-contact .content-container_wrap-contact-body > p > a {
+  color: #FF6922;
 }
 .content-container .content-container_wrap-contact .content-container_wrap-contact-header {
   margin-bottom: 50px;
@@ -9973,7 +10013,7 @@ img {
 }
 .content-container .content-container_wrap-contact .content-container_wrap-contact-header .wrap-contact_text {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.6rem;
   margin-top: 5px;
 }
 .content-container .content-container_wrap-contact .content-container_wrap-contact--show {
@@ -10040,6 +10080,10 @@ img {
   width: 100%;
 }
 
+.single .wp-caption,
+.single .wp-caption-text {
+  color: #fff;
+}
 .single .post header h1 {
   text-transform: uppercase;
   font-size: 3em;
@@ -10072,7 +10116,7 @@ img {
   height: 300px;
 }
 .single .post .entry-content blockquote {
-  border-left: 2px solid black;
+  border-left: 2px solid #ebebeb;
   margin: 20px 0;
 }
 .single .post .entry-content blockquote p {
@@ -10086,6 +10130,7 @@ img {
   font-size: 2em;
   text-transform: uppercase;
   margin: 20px 0;
+  color: #004AAD;
 }
 .single .post .entry-content p {
   font-size: 1.6em;
@@ -10106,10 +10151,14 @@ img {
 .single .post .entry-content ul li {
   font-size: 1.6em;
   line-height: 1.6;
+  color: #004AAD;
 }
 .single .post .entry-content ul li h4 {
   font-weight: 400;
   color: #9b9b9b;
+}
+.single .post .entry-content ul li h3 {
+  color: #004AAD;
 }
 .single .post .entry-content ul li figure {
   width: 60% !important;
@@ -10130,7 +10179,7 @@ img {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(133, 211, 211, 0.4509803922);
+  background-color: #FF6922;
   display: block;
   width: 60% !important;
 }

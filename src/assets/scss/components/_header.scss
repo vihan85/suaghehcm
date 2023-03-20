@@ -174,10 +174,10 @@
                             position: absolute;
                             z-index: 1;
                             min-width: 300px;
-                            background: white;
+                            background-color: white;
                             line-height: 0;
                             box-shadow: 4px 4px 14px #ddd;
-
+                            
                             .menu-item {
                                 padding: 20px 20px;
                                 border-bottom: 1px solid $boder-color;
@@ -372,7 +372,7 @@
 
             .btn-menu {
                 .btn-menu_icon {
-                    font-size: 2em;
+                    font-size: 3rem;
                     color: $white-color;
                     padding: 0 10px 0;
                 }
@@ -402,17 +402,23 @@
                 transform: translateX(calc(100% + 1px));
                 transition: transform 1s;
                 background: $mobile-menu-color;
+                border-left: 1px solid $boder-color-submenu;
                 width: 80vw;
 
                 .menu-header-container {
                     .nav-menu {
                         display: block;
                         color: $primari-color;
-
+                        .menu-item-has-children{
+                            &::after{
+                                color: $primari-color;
+                            }
+                        }
                         .menu-item {
                             line-height: 50px;
-                            border-bottom: 1px solid #616161;
+                            border-bottom: 1px solid $boder-color-submenu;
                             width: 100%;
+                            padding-left: 10px;
                             >a {
                                 color: currentColor;
                                 font-weight: 400;
@@ -422,6 +428,9 @@
                             }
 
                             .sub-menu {
+                                @include responsive(phone){
+                                    background-color: transparent;
+                                }
                                 .menu-item {
                                     padding: 0;
                                     border: none;
@@ -470,6 +479,7 @@
         margin: 10px 0;
     }
     .project-outstanding {
+        
         .project-outstanding_inner {
             .project-outstanding_content {
                 .project-outstanding_text{
@@ -488,7 +498,6 @@
                                 .sub-menu{
                                     position: unset;
                                     line-height: unset;
-                                    background-color: #38383800;
                                     position: unset;
                                     line-height: unset;
                                     box-shadow: none;

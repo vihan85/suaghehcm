@@ -262,8 +262,15 @@ img{
            border-left-width: 100vw;
            border-bottom: 2vw solid $primari-color;
        }
-
-       
+       @include responsive(phone) {
+                &::after{
+                    border-bottom: 10vw solid #FF6922;
+                }
+           
+                &::before{
+                    border-top: 10vw solid #FF6922;
+                }
+       }
     }
     .project-outstanding_wrapper-title {
         color: $uppcase-color; 
