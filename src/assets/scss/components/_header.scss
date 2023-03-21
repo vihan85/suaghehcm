@@ -358,9 +358,17 @@
                 display: block;
                 overflow: hidden;
                 border-radius: 50%;
+                background-color: $primari-color;
                 img{
                     height: calc($headerHeight / 2);
                     object-fit: contain;
+                    @include responsive(phone) {
+                    height: calc($headerHeight);
+
+                    }
+                }
+                @include responsive(phone) {
+                    margin-top: calc(($headerHeight / 2) - 10px)
                 }
             }
             position: fixed;

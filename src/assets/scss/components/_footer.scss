@@ -3,11 +3,22 @@
     padding: 0 12px;
     min-height: 400px;
     .spacer {
+        display: flex;
+        margin: 0 auto;
         .spacer_inner {
+            display: none;
             height: 50px;
             width: 1px;
             background-color: white;
-            margin: 0 auto
+            margin: 0 auto;
+            @include responsive(phone) {
+               
+                display: block;
+                height: 1px;
+                width: 200px;
+                background-color: $boder-color-submenu
+            }
+            
         }
     }
 
@@ -16,6 +27,9 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        @include responsive(phone) {
+            margin-top: 30px;
+        }
 
         .footer_slogan {
             font-size: 1.6rem;
@@ -33,6 +47,7 @@
             width: 200px;
             border-radius: 50%;
             overflow: hidden;
+            background-color: $primari-color;
             >a {
                 text-decoration: none;
             }
@@ -74,7 +89,6 @@
             list-style-type: none;
 
             >li {
-                padding: 10px 0;
                 >a{
                     text-transform: uppercase;
                     align-items: center;
@@ -113,6 +127,10 @@
                 color: $uppcase-color;
                 font-size: 2rem;
                 padding: 20px 0;
+                @include responsive(phone) {
+                    padding: 0;
+                    
+                }
 
             }
         }

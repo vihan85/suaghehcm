@@ -43,6 +43,9 @@
 
 
 @include responsive(pc) {
+    .col{
+        padding: 32px 32px;
+    }
     .l-2 {
         flex: 0 0 16.6667%;
         max-width: 16.6667%;
@@ -107,6 +110,9 @@
 }
 
 @include responsive(phone) {
+    .col {
+        padding: 12px 12px;
+    }
     .grid {
         padding: 6px 12px;
     }
@@ -116,12 +122,10 @@
     }
 
     .row {
-        margin: -6px -12px;
+        margin: -12px -12px;
     }
 
-    .col {
-        padding: 6px 6px;
-    }
+   
 
     .s-2 {
         flex: 0 0 16.6667%;

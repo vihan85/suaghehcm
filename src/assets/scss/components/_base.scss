@@ -20,7 +20,7 @@ img {
 }
 
 .space-top {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .grid {
@@ -63,7 +63,7 @@ img {
     border-radius: 30px;
     padding-left: 30px;
     padding-right: 30px;
-
+    margin-top: 20px;
     &:hover {
         background-color: $btn-hover;
     }
@@ -74,7 +74,7 @@ img {
 }
 
 .line-height {
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .max-width {
