@@ -2,15 +2,23 @@
     border-top: 2px solid $primari-color;
     padding: 0 12px;
     min-height: 400px;
-    background-color: $white-color;
-    margin-top: 50px;
-
     .spacer {
+        display: flex;
+        margin: 0 auto;
         .spacer_inner {
+            display: none;
             height: 50px;
             width: 1px;
             background-color: white;
-            margin: 0 auto
+            margin: 0 auto;
+            @include responsive(phone) {
+               
+                display: block;
+                height: 1px;
+                width: 200px;
+                background-color: $boder-color-submenu
+            }
+            
         }
     }
 
@@ -19,27 +27,31 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        @include responsive(phone) {
+            margin-top: 30px;
+        }
 
         .footer_slogan {
-            >span {
-                color: $primari-color;
-                font-weight: 800;
-            }
-
-            font-size: 1.6em;
+            font-size: 1.6rem;
             line-height: 1.6;
             text-align: center;
+            color: #004aad;
+            margin-top: 10px;
+            >span {
+                color: $primari-color;
+                font-weight: 600;
+            }
         }
 
         .footer_logo {
+            width: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: $primari-color;
             >a {
                 text-decoration: none;
             }
 
-            .footer_logo-img {
-                width: 249px; // cần chỉnh lại k fix cứng
-                height: 150px; // cần chỉnh lại k fix cứng
-            }
         }
 
     }
@@ -77,12 +89,12 @@
             list-style-type: none;
 
             >li {
-                padding: 10px 0;
                 >a{
                     text-transform: uppercase;
                     align-items: center;
-                    color: $text-color;
+                    color: $primari-color;
                     text-decoration: none;
+                    font-size: 1.6rem;
                 }
 
                 &:hover {
@@ -91,29 +103,34 @@
             }
         }
 
-        .foorter-contact {
+        .footer-contact {
             display: flex;
+            font-size: 1.6rem;
 
             >p {
                 padding: 0 20px;
                 text-align: left;
-                color: $text-color;
+                color: $primari-color;
             }
-
+            // icon
             >i {
-                font-size: 1.3em;
+               font-size: 2rem;
+                color: $uppcase-color;
             }
         }
 
         .footer_content {
-
-            font-size: 1.6em;
             line-height: 1.6;
             .footer_content-title {
                 text-transform: uppercase;
                 font-weight: 600;
+                color: $uppcase-color;
+                font-size: 2rem;
                 padding: 20px 0;
-                color: $black-color;
+                @include responsive(phone) {
+                    padding: 0;
+                    
+                }
 
             }
         }
@@ -121,8 +138,8 @@
 }
 
 .footer-secondary {
-    height: 80px;
-    background-color: #3b3939;
+    height: 40pxpx;
+    background-color: $primari-color;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -131,7 +148,7 @@
     >P {
         padding: 10px;
         font-size: 1.3em;
-        color: $text-color;
+        color: $white-color;
     }
 }
 

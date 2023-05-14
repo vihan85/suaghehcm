@@ -65,11 +65,11 @@
     animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
 }
 .phonering-alo-phone:hover .phonering-alo-ph-img-circle {
-    background-color: #4267b2;
+    background-color: $uppcase-color;
 }
 
 .phonering-alo-green:hover .phonering-alo-ph-img-circle {
-    background-color: #ff9900;
+    background-color: $primari-color;
 }
 
 .phonering-alo-green .phonering-alo-ph-img-circle {
@@ -205,7 +205,7 @@
     position: fixed;
     padding: 5px;
     border-radius: 5px;
-    background: #018fe5 url("./zalo-logo.png") no-repeat;
+    background: #018fe5 url("./img/zalo-logo.png") no-repeat;
     height: 30px;
     background-size: 30px;
 

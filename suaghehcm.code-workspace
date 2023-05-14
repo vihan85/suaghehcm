@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../suaghehcm_wp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "suaghehcm"
+	}
+}

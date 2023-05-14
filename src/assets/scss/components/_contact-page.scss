@@ -1,5 +1,6 @@
 
     .content-container_banner{
+        margin-top: 40px;
         justify-content: center;
         >img{
             width: 100%;
@@ -11,6 +12,9 @@
         min-height: 500px;
     }
     .content-container_wrap-contact{
+        >a{
+            color: $primari-color;
+        }
         background-image: url("./img/contact-bg.png");
         position: relative;
         height: 100%;
@@ -35,8 +39,13 @@
                 color: $white-color;
                 margin: 20px 0;
                 text-align: center;
-                font-size: 1.6em;
+                font-size: 2.5rem;
+                >a{
+                    color: $primari-color;
+                }
             }
+            
+            
 
         }
         .content-container_wrap-contact-header{
@@ -48,7 +57,7 @@
             }
             .wrap-contact_text{
                 color: $white-color;
-                font-size: 1.2em;
+                font-size: 1.6rem;
                 margin-top: 5px;
             }
 
