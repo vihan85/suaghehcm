@@ -1,4 +1,3 @@
-
 /*************** ADD CUSTOM CSS HERE.   ***************/
 .phonering-alo-ph-circle {
     width: 160px;
@@ -54,9 +53,7 @@
     top: 70px;
     left: 70px;
     position: absolute;
-    background: rgba(30, 30, 30, 0.1)
-        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAB/ElEQVR42uya7W3CMBCG31QM4A1aNggTlG6QbpBMkHYC1AloJ4BOABuEDcgGtBOETnD9c1ERCH/lwxeaV8oPFGP86Hy+DxMREW5Bd7gRjSDSNGn4/RiAOvm8C0ZCRD5PSkQVXSr1nK/xE3mcWimA1ZV3JYBZCIO4giQANoYxMwYS6+xKY4lT5dJPreWZY+uspqSCKPYN27GJVBDXheVSQe494ksiEWTuMXcu1dld9SARxDX1OAJ4lgjy4zDnFsC076A4adEiRwAZg4hOUSpNoCsBPDGM+HqkNGynYBCuILuWj+dgWysGsNe8nwL4GsrW0m2fxZBq9rW0rNcX5MOQ9eZD8JFahcG5g/iKT671alGAYQggpYWvpEPYWrU/HDTOfeRIX0q2SL3QN4tGhZJukVobQyXYWw7WtLDKDIuM+ZSzscyCE9PCy5IttCvnZNaeiGLNHKuz8ZVh/MXTVu/1xQKmIqLEAuJ0fNo3iG5B51oSkeKnsBi/4bG9gYB/lCytU5G9DryFW+3Gm+JLwU7ehbJrwTjq4DJU8bHcVbEV9dXXqqP6uqO5e2/QZRYJpqu2IUAA4B3tXvx8hgKp05QZW6dJqrLTNkB6vrRURLRwPHqtYgkC3cLWQAcDQGGKH13FER/NATzi786+BPDNjm1dMkfjn2pGkBHkf4D8DgBJDuDHx9BN+gAAAABJRU5ErkJggg==)
-        no-repeat center center;
+    background: rgba(30, 30, 30, 0.1) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAB/ElEQVR42uya7W3CMBCG31QM4A1aNggTlG6QbpBMkHYC1AloJ4BOABuEDcgGtBOETnD9c1ERCH/lwxeaV8oPFGP86Hy+DxMREW5Bd7gRjSDSNGn4/RiAOvm8C0ZCRD5PSkQVXSr1nK/xE3mcWimA1ZV3JYBZCIO4giQANoYxMwYS6+xKY4lT5dJPreWZY+uspqSCKPYN27GJVBDXheVSQe494ksiEWTuMXcu1dld9SARxDX1OAJ4lgjy4zDnFsC076A4adEiRwAZg4hOUSpNoCsBPDGM+HqkNGynYBCuILuWj+dgWysGsNe8nwL4GsrW0m2fxZBq9rW0rNcX5MOQ9eZD8JFahcG5g/iKT671alGAYQggpYWvpEPYWrU/HDTOfeRIX0q2SL3QN4tGhZJukVobQyXYWw7WtLDKDIuM+ZSzscyCE9PCy5IttCvnZNaeiGLNHKuz8ZVh/MXTVu/1xQKmIqLEAuJ0fNo3iG5B51oSkeKnsBi/4bG9gYB/lCytU5G9DryFW+3Gm+JLwU7ehbJrwTjq4DJU8bHcVbEV9dXXqqP6uqO5e2/QZRYJpqu2IUAA4B3tXvx8hgKp05QZW6dJqrLTNkB6vrRURLRwPHqtYgkC3cLWQAcDQGGKH13FER/NATzi786+BPDNjm1dMkfjn2pGkBHkf4D8DgBJDuDHx9BN+gAAAABJRU5ErkJggg==) no-repeat center center;
     border-radius: 100% !important;
     border: 2px solid transparent;
     -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
@@ -64,6 +61,7 @@
     -o-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
     animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
 }
+
 .phonering-alo-phone:hover .phonering-alo-ph-img-circle {
     background-color: $uppcase-color;
 }
@@ -103,6 +101,7 @@
         -o-transform: rotate(0) scale(0.5) skew(1deg);
         transform: rotate(0) scale(0.5) skew(1deg);
     }
+
     30% {
         opacity: 0.5;
         -webkit-transform: rotate(0) scale(0.7) skew(1deg);
@@ -111,6 +110,7 @@
         -o-transform: rotate(0) scale(0.7) skew(1deg);
         transform: rotate(0) scale(0.7) skew(1deg);
     }
+
     100% {
         opacity: 0.1;
         -webkit-transform: rotate(0) scale(1) skew(1deg);
@@ -130,6 +130,7 @@
         -o-transform: rotate(0) scale(0.7) skew(1deg);
         transform: rotate(0) scale(0.7) skew(1deg);
     }
+
     50% {
         opacity: 0.2;
         -webkit-transform: rotate(0) scale(1) skew(1deg);
@@ -138,6 +139,7 @@
         -o-transform: rotate(0) scale(1) skew(1deg);
         transform: rotate(0) scale(1) skew(1deg);
     }
+
     100% {
         opacity: 0.2;
         -webkit-transform: rotate(0) scale(0.7) skew(1deg);
@@ -156,6 +158,7 @@
         -o-transform: rotate(0) scale(1) skew(1deg);
         transform: rotate(0) scale(1) skew(1deg);
     }
+
     10% {
         -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
         -moz-transform: rotate(-25deg) scale(1) skew(1deg);
@@ -163,6 +166,7 @@
         -o-transform: rotate(-25deg) scale(1) skew(1deg);
         transform: rotate(-25deg) scale(1) skew(1deg);
     }
+
     20% {
         -webkit-transform: rotate(25deg) scale(1) skew(1deg);
         -moz-transform: rotate(25deg) scale(1) skew(1deg);
@@ -170,6 +174,7 @@
         -o-transform: rotate(25deg) scale(1) skew(1deg);
         transform: rotate(25deg) scale(1) skew(1deg);
     }
+
     30% {
         -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
         -moz-transform: rotate(-25deg) scale(1) skew(1deg);
@@ -177,6 +182,7 @@
         -o-transform: rotate(-25deg) scale(1) skew(1deg);
         transform: rotate(-25deg) scale(1) skew(1deg);
     }
+
     40% {
         -webkit-transform: rotate(25deg) scale(1) skew(1deg);
         -moz-transform: rotate(25deg) scale(1) skew(1deg);
@@ -184,6 +190,7 @@
         -o-transform: rotate(25deg) scale(1) skew(1deg);
         transform: rotate(25deg) scale(1) skew(1deg);
     }
+
     50% {
         -webkit-transform: rotate(0) scale(1) skew(1deg);
         -moz-transform: rotate(0) scale(1) skew(1deg);
@@ -191,6 +198,7 @@
         -o-transform: rotate(0) scale(1) skew(1deg);
         transform: rotate(0) scale(1) skew(1deg);
     }
+
     100% {
         -webkit-transform: rotate(0) scale(1) skew(1deg);
         -moz-transform: rotate(0) scale(1) skew(1deg);
@@ -199,6 +207,7 @@
         transform: rotate(0) scale(1) skew(1deg);
     }
 }
+
 .zalo-wrap {
     right: 50px;
     bottom: 10px;
@@ -213,16 +222,18 @@
         text-decoration: none;
     }
 }
+
 .zalo-text {
     color: #ffffff;
     margin-left: 35px;
 }
+
 .zalo-image {
     width: 30px;
 }
 
 @media only screen and (max-width: 48em) {
-/*************** ADD MOBILE ONLY CSS HERE  ***************/
+    /*************** ADD MOBILE ONLY CSS HERE  ***************/
 
 
 }
@@ -232,6 +243,7 @@
         display: none;
     }
 }
+
 @media only screen and (min-width: 320px) {
     .zalo-wrap {
         right: 5px;

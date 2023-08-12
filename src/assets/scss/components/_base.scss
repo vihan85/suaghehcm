@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600&family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,700&family=Mukta:wght@200;400;500;800&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400&family=Sono:wght@300;400;500;600;700;800&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,12 +10,19 @@ html {
     font-size: 62.5%;
     font-family: 'Lato', sans-serif, 'arial';
 }
-body{
-    background-color: #f5f5f5;
+
+body {
+    background-color: #ffffff;
 }
+
+.single-post {
+    font-size: 14px;
+}
+
 a {
     text-decoration: none;
 }
+
 img {
     object-fit: cover;
 }
@@ -37,7 +45,8 @@ img {
 .gutter-top {
     margin-top: 12px;
 }
-.no-gutter{
+
+.no-gutter {
     padding-left: 0;
     padding-right: 0;
 }
@@ -48,6 +57,7 @@ img {
     margin-left: -8px;
     margin-right: -8px
 }
+
 @import './_grid';
 
 .btn {
@@ -64,6 +74,7 @@ img {
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 20px;
+
     &:hover {
         background-color: $btn-hover;
     }
@@ -87,6 +98,7 @@ img {
     display: none;
 
 }
+
 @keyframes opacity {
     from {
 
@@ -150,6 +162,7 @@ img {
 .hide {
     display: none !important;
 }
+
 .show {
     display: block !important;
 }

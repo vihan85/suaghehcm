@@ -1,20 +1,23 @@
+.content-container_banner {
+    margin-top: 40px;
+    justify-content: center;
 
-    .content-container_banner{
-        margin-top: 40px;
-        justify-content: center;
-        >img{
-            width: 100%;
-        }
+    >img {
+        width: 100%;
     }
-.content-container{
-    .content-container_wrap{
+}
+
+.content-container {
+    .content-container_wrap {
         background-color: $primari-color;
         min-height: 500px;
     }
-    .content-container_wrap-contact{
-        >a{
+
+    .content-container_wrap-contact {
+        >a {
             color: $primari-color;
         }
+
         background-image: url("./img/contact-bg.png");
         position: relative;
         height: 100%;
@@ -23,8 +26,9 @@
         align-items: center;
         justify-content: center;
         padding: 30px;
+
         &::after {
-            background-color: rgba(10,0,1,0.9);
+            background-color: rgba(10, 0, 1, 0.9);
             top: 0;
             left: 0;
             bottom: 0;
@@ -34,54 +38,63 @@
             z-index: 0;
             content: "";
         }
-        .content-container_wrap-contact-body{
-            >p{
+
+        .content-container_wrap-contact-body {
+            >p {
                 color: $white-color;
                 margin: 20px 0;
                 text-align: center;
                 font-size: 2.5rem;
-                >a{
+
+                >a {
                     color: $primari-color;
                 }
             }
-            
-            
+
+
 
         }
-        .content-container_wrap-contact-header{
+
+        .content-container_wrap-contact-header {
             margin-bottom: 50px;
             text-align: center;
-            .wrap-contact_title{
+
+            .wrap-contact_title {
                 color: $primari-color;
                 font-size: 5em;
             }
-            .wrap-contact_text{
+
+            .wrap-contact_text {
                 color: $white-color;
                 font-size: 1.6rem;
                 margin-top: 5px;
             }
 
         }
-        .content-container_wrap-contact--show{
+
+        .content-container_wrap-contact--show {
             position: relative;
             z-index: 1;
         }
-        .content-container_wrap-contact-social{
+
+        .content-container_wrap-contact-social {
             color: $primari-color;
             margin-top: 10px;
-            >i{
+
+            >i {
                 font-size: 4em;
                 margin: 0 20px;
             }
         }
     }
-    .content-container_wrap-info{
+
+    .content-container_wrap-info {
         padding: 30px;
         background-color: $primari-color;
         min-height: 450px;
 
-        .form-1{
-            .heading{
+        .form-1 {
+            .heading {
                 font-weight: 400;
                 margin: 0;
                 text-align: center;
@@ -89,25 +102,28 @@
                 color: white;
                 text-transform: uppercase;
             }
-            .desc{
+
+            .desc {
                 text-align: center;
                 margin-bottom: 20px;
                 font-size: 1.5em;
                 color: white;
 
             }
-            .form-group-1{
-                >label{
+
+            .form-group-1 {
+                >label {
                     display: block;
                     margin-top: 20px;
                     margin-bottom: 10px;
-                    font-size: 1.6em;
+                    font-size: 1.6rem;
                     font-weight: 600
                 }
-                >input{
+
+                >input {
                     height: 40px;
                     width: 100%;
-                    font-size: 1.6em;
+                    font-size: 1.6rem;
                     box-shadow: 4px 4px 12px gray;
                     outline: none;
                     border: 1px solid $boder-color;
@@ -116,7 +132,8 @@
                 }
 
             }
-            .btn{
+
+            .btn {
                 margin-top: 20px;
                 background-color: rgb(2 2 2 / 74%);
                 margin-left: auto;
@@ -124,13 +141,15 @@
                 border-radius: 30px;
                 color: $white-color;
                 box-shadow: 1px 1px 4px grey;
-                &:hover{
+
+                &:hover {
                     opacity: 0.8;
                 }
             }
         }
     }
-    iframe{
+
+    iframe {
         width: 100%;
     }
 }

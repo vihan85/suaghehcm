@@ -1,24 +1,26 @@
 .footer-container {
-    border-top: 2px solid $primari-color;
     padding: 0 12px;
     min-height: 400px;
+
     .spacer {
         display: flex;
         margin: 0 auto;
+
         .spacer_inner {
             display: none;
             height: 50px;
             width: 1px;
             background-color: white;
             margin: 0 auto;
+
             @include responsive(phone) {
-               
+
                 display: block;
                 height: 1px;
                 width: 200px;
                 background-color: $boder-color-submenu
             }
-            
+
         }
     }
 
@@ -27,6 +29,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+
         @include responsive(phone) {
             margin-top: 30px;
         }
@@ -37,6 +40,7 @@
             text-align: center;
             color: #004aad;
             margin-top: 10px;
+
             >span {
                 color: $primari-color;
                 font-weight: 600;
@@ -48,6 +52,7 @@
             border-radius: 50%;
             overflow: hidden;
             background-color: $primari-color;
+
             >a {
                 text-decoration: none;
             }
@@ -89,7 +94,7 @@
             list-style-type: none;
 
             >li {
-                >a{
+                >a {
                     text-transform: uppercase;
                     align-items: center;
                     color: $primari-color;
@@ -112,24 +117,27 @@
                 text-align: left;
                 color: $primari-color;
             }
+
             // icon
             >i {
-               font-size: 2rem;
+                font-size: 2rem;
                 color: $uppcase-color;
             }
         }
 
         .footer_content {
             line-height: 1.6;
+
             .footer_content-title {
                 text-transform: uppercase;
                 font-weight: 600;
                 color: $uppcase-color;
                 font-size: 2rem;
                 padding: 20px 0;
+
                 @include responsive(phone) {
                     padding: 0;
-                    
+
                 }
 
             }
@@ -147,7 +155,7 @@
 
     >P {
         padding: 10px;
-        font-size: 1.3em;
+        font-size: 1.6rem;
         color: $white-color;
     }
 }
