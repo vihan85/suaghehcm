@@ -5,13 +5,15 @@
             width: 100%;
         }
     }
+
     .slick-next:before,
-    .slick-prev:before{
+    .slick-prev:before {
         color: $primari-color;
         font-size: 40px;
         opacity: 0.5;
     }
-    .slick-next{
+
+    .slick-next {
         right: -4px
     }
 
@@ -40,9 +42,9 @@
                     padding: $space;
                     text-transform: uppercase;
                     color: $primari-color;
-                    font-size: 3em;
-                    font-weight: 900;
-                    text-shadow: 2px 0px 9px black;
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    text-shadow: 2px 0px 9px #b7a2a2;
                     margin-top: calc($space*2);
                     transform: translateY(-60px);
                     opacity: 0;
@@ -50,17 +52,18 @@
 
                 .slider_content-text {
                     padding: 0px 20px;
-                    font-size: 1.3em;
+                    font-size: 1.6rem;
                     text-align: justify;
 
                     >p {
                         text-align: center;
-                        font-size: 1.3em;
+                        font-size: 1.6rem;
                     }
                 }
             }
         }
     }
+
     &.acctive {
         .slider_full-slick-container {
             .slider_full-slick-content {
@@ -75,8 +78,11 @@
         }
     }
 }
+
 @include responsive(phone) {
     .slider_full-slick {
+        margin-top: calc(($headerHeight/2) - 10px);
+
         .slider_full-slick-container {
             display: flex;
 

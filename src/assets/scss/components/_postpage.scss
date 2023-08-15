@@ -1,9 +1,15 @@
 .single {
+
+    .wp-caption,
+    .wp-caption-text {
+        color: $white-color;
+    }
+
     .post {
         header {
             h1 {
                 text-transform: uppercase;
-                font-size: 3em;
+                font-size: 2.4rem;
                 text-align: center;
                 color: $primari-color;
 
@@ -39,18 +45,17 @@
         }
 
         img {
-            object-fit: cover;
-            height: 300px;
+            object-fit: contain;
         }
 
         .entry-content {
             blockquote {
-                border-left: 2px solid black;
+                border-left: 2px solid $boder-color;
                 margin: 20px 0;
 
                 p {
                     margin-left: 20px;
-                    font-size: 1.6em;
+                    font-size: 1.6rem;
                     line-height: 1.6;
                     color: $text-color;
                     text-align: justify;
@@ -61,10 +66,11 @@
                 font-size: 2em;
                 text-transform: uppercase;
                 margin: 20px 0;
+                color: $uppcase-color;
             }
 
             p {
-                font-size: 1.6em;
+                font-size: 1.6rem;
                 line-height: 1.6;
                 text-align: justify;
                 color: $text-color;
@@ -79,12 +85,13 @@
             }
 
             ul {
-                margin-left: 50px;
+                margin-left: 10px;
 
                 li {
 
-                    font-size: 1.6em;
+                    font-size: 1.6rem;
                     line-height: 1.6;
+                    color: $uppcase-color;
 
                     h4 {
                         font-weight: 400;
@@ -92,11 +99,17 @@
 
                     }
 
+                    h3 {
+                        color: $uppcase-color;
+                    }
+
                     figure {
                         width: 60% !important;
+
                         @include responsive(phone) {
                             width: 100% !important;
                         }
+
                         figcaption {
                             text-align: center;
                             font-size: 0.9em;
@@ -113,45 +126,47 @@
                 margin-top: 50px;
                 margin-left: auto;
                 margin-right: auto;
-                background-color: #85d3d373;
+                background-color: $primari-color;
                 display: block;
                 width: 60% !important;
+
                 @include responsive(phone) {
                     width: 100% !important;
                 }
 
                 figcaption {
                     text-align: center;
-                    font-size: 1.3em;
+                    font-size: 1.6rem;
                     padding: 10px;
                     font-style: italic;
                     font-weight: 600;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: rgb(209, 42, 42);
                     }
                 }
             }
         }
-        footer{
+
+        footer {
             text-align: end;
             color: $text-color;
-            a{
 
-            }
+            a {}
         }
 
     }
+
     .proceduce {
-        border-top: 2px solid $primari-color;
-        margin: 50px 0;
+        margin: 0;
 
         .proceduce_title {
             text-align: center;
 
             p {
                 padding: 20px;
-                font-size: 3em;
+                font-size: 2.4rem;
                 text-transform: uppercase;
                 font-weight: 600;
             }
@@ -166,6 +181,7 @@
 
 
     }
+
     .proceduce_container {
         .proceduce_item {
             .proceduce_item-img {
@@ -187,7 +203,7 @@
                 }
 
                 span {
-                    font-size: 1.6em;
+                    font-size: 1.6rem;
                     line-height: 1.6;
                     color: gray;
                     text-align: justify;

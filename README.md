@@ -13,6 +13,9 @@ cách 2: npm run scss
    - Đọc trong file package.json > scripts > và thực thi lên scss
 Dọc trong file package.json > scripts > đọc lệnh
 
+Compile build
+npm install grunt-cli > grunt
+
 # menu mobile
 1/ nằm bên trái width 80%, height 100%
 2/ nút danh sách nằm cạnh logo

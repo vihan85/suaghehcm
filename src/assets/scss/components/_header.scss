@@ -1,7 +1,12 @@
-.menu-header-container-overlay{
+.menu-header-container-overlay {
     opacity: 0;
 }
+
 .header {
+    .main-header {
+        background-color: $primari-color;
+    }
+
     .btn-menu {
         display: none;
     }
@@ -12,13 +17,14 @@
         display: flex;
         align-items: center;
         font-weight: 400;
-        .site-header_logo-mobile{
+
+        .site-header_logo-mobile {
             display: none;
         }
 
         .header-top_tell {
-            color: $text-color;
-            font-size: 1.6em;
+            color: $uppcase-color;
+            font-size: 1.6rem;
             text-decoration: none;
             margin-left: 8px;
         }
@@ -28,14 +34,16 @@
             color: rgb(89, 86, 86)
         }
     }
+
     .header-top-left {
         margin-right: 8px;
         font-size: 1.5em;
         list-style-type: none;
         display: flex;
-        color: $text-color;
+        color: $uppcase-color;
         margin-left: auto;
         z-index: 1;
+
         >ul {
             position: relative;
             display: flex;
@@ -45,10 +53,12 @@
             li {
                 margin-left: 36px;
                 cursor: pointer;
+
                 a {
-                    color: $text-color;
+                    color: $uppcase-color;
                     text-decoration: none;
                 }
+
                 &.header-top-left_login {
                     .header-top-left_items-icon {
                         margin: 0 4px;
@@ -97,6 +107,7 @@
 
         .main-navigation {
             height: inherit;
+
             .main-nav_icon-list {
 
                 display: none;
@@ -111,12 +122,15 @@
                     align-items: center;
                     justify-content: space-around;
                     list-style-type: none;
-                    .menu-item-has-children{
-                        &::after{
+
+                    .menu-item-has-children {
+                        &::after {
                             font-family: "FontAwesome";
                             content: '\f107';
                             padding: 10px 5px;
-                            font-size: 1.6em;
+                            font-size: 1.6rem;
+                            color: $white-color;
+
                             @include responsive(phone) {
                                 color: $white-color;
                                 position: absolute;
@@ -125,11 +139,13 @@
                                 top: 0
                             }
                         }
-                        @include responsive(phone){
+
+                        @include responsive(phone) {
                             &.active {
-                                &::after{
+                                &::after {
                                     content: '\f106';
                                 }
+
                                 .sub-menu {
                                     display: block;
                                 }
@@ -141,7 +157,7 @@
                         font-family: "FontAwesome";
                         content: '\f106';
                         padding: 20px 10px 20px 10px;
-                        font-size: 1.6em;
+                        font-size: 2rem;
                         color: $white-color;
                     }
 
@@ -154,13 +170,14 @@
                         >a {
                             text-decoration: none;
                             color: $black-color;
-                            font-size: 1.6em;
+                            font-size: 1.6rem;
                             text-transform: uppercase;
                             font-weight: 600;
                         }
-                        >i{
+
+                        >i {
                             padding: 5px;
-                            font-size: 1.6em;
+                            font-size: 1.6rem;
                         }
 
                         .sub-menu {
@@ -170,7 +187,7 @@
                             position: absolute;
                             z-index: 1;
                             min-width: 300px;
-                            background: white;
+                            background-color: white;
                             line-height: 0;
                             box-shadow: 4px 4px 14px #ddd;
 
@@ -181,8 +198,8 @@
 
                                 >a {
                                     text-decoration: none;
-                                    color: $black-color;
-                                    font-size: 1.6em;
+                                    color: $primari-color;
+                                    font-size: 1.6rem;
                                     text-transform: uppercase;
                                 }
                             }
@@ -197,9 +214,10 @@
                                 border-radius: 0 0 2px 2px;
 
                             }
+
                             .menu-item:hover {
-                                @include backgroundText1($primari-color){
-                                }
+                                cursor: pointer;
+                                @include backgroundText1($primari-color)
                             }
                         }
                     }
@@ -240,9 +258,17 @@
 
     .site-header-right_logo {
         cursor: pointer;
-        height: 100px;
-        img{
+        height: $headerHeight;
+
+        img {
             object-fit: contain;
+        }
+
+        >span {
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            width: calc($headerHeight + 3px);
         }
     }
 }
@@ -255,23 +281,30 @@
                 .menu-header-container {
                     .nav-menu {
                         .menu-item {
+                            >a {
+                                color: $white-color;
+                            }
+
                             &:hover {
 
-                                    >a {
-                                        @include textHover($black-color);
-                                    }
+                                >a {
 
-                                    .sub-menu {
-                                        display: block;
-                                        animation: scale 0.6s ease;
-                                        transform-origin: center top;
-                                    }
+                                    @include textHover($primari-color);
                                 }
+
+                                .sub-menu {
+                                    display: block;
+                                    animation: scale 0.6s ease;
+                                    transform-origin: center top;
+                                }
+                            }
                         }
-                        .menu-item_icon-down:after{
+
+                        .menu-item_icon-down:after {
                             color: $black-color;
                             padding: 0;
                         }
+
                         .menu-item_icon-up:after {
                             color: $black-color;
                             padding: 0;
@@ -281,47 +314,99 @@
             }
         }
     }
+
     .scroll-menu {
         .main-header {
             position: fixed;
             top: 0px !important;
             z-index: 1;
-            background-color: #fff;
+            background-color: $primari-color;
             right: 0;
             left: 0;
             transition: top 1s;
-            border-bottom: 1px solid $boder-color;
             z-index: 3;
             box-shadow: 1px 1px 2px #fff0f0;
+        }
+
+        .menu-item-has-children {
+            &::after {
+                color: white !important;
+            }
+        }
+
+        .menu-item {
+            >a {
+                color: $white-color !important;
+            }
+
+            &:hover {
+
+                .sub-menu {
+                    background-color: $primari-color !important;
+
+                    >a {
+                        color: $uppcase-color ;
+                    }
+
+                    .menu-item {
+                        &:hover {
+                            background-color: $white-color !important;
+                        }
+                    }
+                }
+
+                >a {
+                    color: $uppcase-color !important;
+                }
+            }
         }
 
         .slider_full-slick {
             margin-top: 100px;
         }
+
     }
 }
 
 
 @include responsive(phone) {
+
     .header {
-        .site-header{
-            .site-header-right{
-                .site-header-right_logo{
+        .site-header {
+            .site-header-right {
+                .site-header-right_logo {
                     display: none;
                 }
             }
         }
+
         .header-top {
-            .site-header_logo-mobile{
+            height: calc(($headerHeight / 2) + 2px);
+            border: none;
+
+            .site-header_logo-mobile {
                 display: block;
-                height: 30px;
-                img{
-                    height: 30px;
+                overflow: hidden;
+                border-radius: 50%;
+                background-color: $primari-color;
+
+                img {
+                    height: calc($headerHeight / 2);
                     object-fit: contain;
+
+                    @include responsive(phone) {
+                        height: calc($headerHeight);
+                        width: calc($headerHeight);
+                    }
+                }
+
+                @include responsive(phone) {
+                    margin-top: calc(($headerHeight / 2) - 10px)
                 }
             }
+
             position: fixed;
-            background-color: $white-color;
+            background-color: $primari-color;
             z-index: 50;
             top: 0;
             justify-content: space-between;
@@ -329,8 +414,8 @@
 
             .btn-menu {
                 .btn-menu_icon {
-                    font-size: 2em;
-                    color: #848484;
+                    font-size: 3rem;
+                    color: $white-color;
                     padding: 0 10px 0;
                 }
             }
@@ -343,6 +428,9 @@
 
         .btn-menu {
             display: block;
+            flex: 1;
+            text-align: end;
+            margin-left: 60%;
         }
 
         .site-header {
@@ -353,44 +441,59 @@
                 position: fixed;
                 right: 0;
                 bottom: 0;
-                top: 35px;
+                top: calc(($headerHeight / 2) + 2px);
                 z-index: 100;
                 background: $white-color;
                 transform: translateX(calc(100% + 1px));
                 transition: transform 1s;
                 background: $mobile-menu-color;
+                border-left: 1px solid $boder-color-submenu;
                 width: 80vw;
 
                 .menu-header-container {
                     .nav-menu {
                         display: block;
+                        color: $primari-color;
+
+                        .menu-item-has-children {
+                            &::after {
+                                color: $primari-color;
+                            }
+                        }
 
                         .menu-item {
                             line-height: 50px;
-                            border-bottom: 1px solid #616161;
+                            border-bottom: 1px solid $boder-color-submenu;
                             width: 100%;
+                            padding-left: 10px;
+
                             >a {
-                                color: $white-color;
+                                color: currentColor;
                                 font-weight: 400;
                             }
-                            >i{
+
+                            >i {
                                 color: #fff;
                             }
 
                             .sub-menu {
+                                @include responsive(phone) {
+                                    background-color: transparent;
+                                }
+
                                 .menu-item {
                                     padding: 0;
                                     border: none;
 
                                     >a {
-                                        color: $white-color;
                                         text-transform: none;
                                         margin-left: 20px;
                                     }
 
                                 }
                             }
-                            .show{
+
+                            .show {
                                 display: block;
                             }
                         }
@@ -426,31 +529,34 @@
     .service-item {
         margin: 10px 0;
     }
+
     .project-outstanding {
+
         .project-outstanding_inner {
             .project-outstanding_content {
-                .project-outstanding_text{
+                .project-outstanding_text {
                     height: 150px;
                 }
             }
         }
     }
+
     .btn-menu--acctive {
         .header {
             .site-header {
                 .main-navigation {
                     .menu-header-container {
-                        .nav-menu{
+                        .nav-menu {
                             .menu-item {
-                                .sub-menu{
+                                .sub-menu {
                                     position: unset;
                                     line-height: unset;
-                                    background-color: #38383800;
                                     position: unset;
                                     line-height: unset;
                                     box-shadow: none;
                                 }
-                                .show{
+
+                                .show {
                                     display: block;
                                 }
                             }
@@ -459,6 +565,7 @@
                 }
             }
         }
+
         .menu-header-container-overlay {
             position: fixed;
             top: 0;
@@ -470,9 +577,11 @@
             opacity: 1;
             transition: opacity 0.3s
         }
-        .show{
+
+        .show {
             display: block;
         }
+
         .site-header {
             .main-navigation {
                 transform: translateX(0);
@@ -487,11 +596,13 @@
             .site-header_container {
                 flex-direction: column;
             }
+
             .main-navigation {
                 .menu-header-container {
                     .nav-menu {
                         flex-direction: column;
                         align-items: flex-start;
+
                         .menu-item {
                             line-height: 50px;
                         }

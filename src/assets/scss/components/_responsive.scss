@@ -4,22 +4,25 @@ $tablet: 768px; // Tablet screen size.
 $phone: 320px; // Phone screen size.
 
 @mixin responsive($media) {
-    @if $media == pc {
+    @if $media ==pc {
         @media only screen and (min-width: $pc + 1) {
             @content;
         }
     }
-    @else if $media == pc_tablet {
+
+    @else if $media ==pc_tablet {
         @media only screen and (min-width: $tablet - 1) {
             @content;
         }
     }
-    @else if $media == tablet {
+
+    @else if $media ==tablet {
         @media only screen and (min-width: $tablet - 1) and (max-width: $pc) {
             @content;
         }
     }
-    @else if $media == phone {
+
+    @else if $media ==phone {
         @media only screen and (max-width: $tablet) {
             @content;
         }
