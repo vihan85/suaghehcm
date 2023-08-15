@@ -102,3 +102,5 @@ typings/
 
 # TernJS port file
 .tern-port
+src/dist/css/index.css
+src/dist/css/index.css.map
