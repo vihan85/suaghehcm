@@ -31,3 +31,15 @@
 
   animation: opacity 0.3s linear
 }
+
+@mixin textTitle () {
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+@mixin textTitleh2 () {
+  font-size: 2em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
