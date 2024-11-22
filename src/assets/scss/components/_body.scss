@@ -209,8 +209,8 @@ img {
   }
 
   .project-title {
-    font-size: 4em;
-    font-weight: 600;
+    @include textTitle();
+
     text-transform: uppercase;
     margin: 0;
 

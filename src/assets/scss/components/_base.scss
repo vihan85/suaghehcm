@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600&family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,700&family=Mukta:wght@200;400;500;800&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400&family=Sono:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,7 +8,8 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Lato', sans-serif, 'arial';
+    font-family: 'Merriweather', serif;
+    line-height: 2.5rem;
 }
 
 body {
@@ -82,10 +83,6 @@ img {
 
 .btn-l {
     width: 100%;
-}
-
-.line-height {
-    line-height: 1.5;
 }
 
 .max-width {
